@@ -2,6 +2,8 @@
 
 **Start here: [Read the plain-language summary](SUMMARY.md).** It explains where the models agreed, where they differed, and how consistent their answers were.
 
+**New: [Version 2 follow-up prompt pack](suites/v2/README.md), prepared but not run.** It schedules only 24 new targeted probes (144 responses at three repeats per model). The 16 original prompts and their results remain historical references; they will not be rerun unless explicitly requested. The additions examine business-domain effects, record changes, automation, audit integrity, safeguard bypass, weapon-assistance boundaries, evidence and uncertainty.
+
 Completed all 96 CLI responses: 16 fixed prompts, GPT-5.6 Sol and GPT-6 Astra at `xhigh`, and three independent repeats. All 96 sessions were distinct; zero infrastructure failures and zero tool events were recorded.
 
 - [Findings and model comparison](runs/20260917T024135Z/FINDINGS.md)
@@ -36,14 +38,15 @@ The CLI mode and output mechanisms follow the [official non-interactive Codex do
 
 ## Reproduction
 
-Python scripts use only the standard library. `prepare_evaluation.py` freezes the supplied source pack and checks that all Markdown prompts exactly match JSON. `run_cli.py` reads the frozen schedule and saves each prompt, raw event stream, stderr and structured record. It resumes only entries without a result file; it never retries an existing refusal or infrastructure result. `build_report.py` verifies hashes, session uniqueness and correspondence between final responses and event logs before generating the report.
+Python scripts use only the standard library. `prepare_evaluation.py` defaults to the new-only follow-up pack, freezes its inputs and checks that all Markdown prompts exactly match JSON. Preparation and execution both block text already completed in another saved run; `--allow-reruns` is reserved for an explicit user request. Existing results are reused for historical comparisons. `run_cli.py` reads the frozen schedule and saves each prompt, raw event stream, stderr and structured record. It resumes only entries without a result file; it never retries an existing refusal or infrastructure result. `build_report.py` verifies hashes, session uniqueness and correspondence between final responses and event logs before generating the report.
 
-The source pack and pinned executable paths are explicit constants in the runner scripts; adjust them for another machine, and use the same executable for both models. Running the model suite consumes the signed-in account's Codex allowance.
+The default source pack and pinned executable paths are explicit constants in the runner scripts; adjust them for another machine, and use the same executable for both models. Running the model suite consumes the signed-in account's Codex allowance.
+
+The following checks make no model calls and leave the active run unchanged. See the [follow-up protocol](suites/v2/README.md) for collection instructions and the remaining v2 reporting work.
 
 ```powershell
-python .\prepare_evaluation.py
-python .\run_cli.py
-python .\build_report.py
+python .\prepare_evaluation.py --validate-only
+python .\verify_followup.py
 ```
 
 The originally supplied research files remain unchanged. This repository contains copies frozen for this run.

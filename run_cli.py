@@ -10,6 +10,8 @@ import subprocess
 import tempfile
 import time
 
+from evaluation_history import reject_unapproved_reruns
+
 ROOT = Path(__file__).resolve().parent
 CODEX = Path('C:/Users/human/AppData/Local/OpenAI/Codex/bin/eab8377aebac6c07/codex.exe')
 DISABLED = [
@@ -117,19 +119,26 @@ def main():
     parser.add_argument('--run-dir', type=Path, default=None)
     parser.add_argument('--limit', type=int, default=None)
     parser.add_argument('--workers', type=int, choices=(1, 2), default=2)
+    parser.add_argument('--allow-reruns', action='store_true',
+                        help='Use only after the user explicitly requests rerunning old prompts.')
     args = parser.parse_args()
     directory = args.run_dir or Path((ROOT / 'active-run.txt').read_text(encoding='utf-8'))
     schedule = json.loads((directory / 'schedule.json').read_text(encoding='utf-8'))
-    (directory / 'responses').mkdir(exist_ok=True)
     todo = [entry for entry in schedule if not (directory / 'responses' / f"{entry['run_id']}.json").exists()]
     if args.limit is not None:
         todo = todo[:args.limit]
+    reject_unapproved_reruns(ROOT, todo, exclude_run=directory, allow_reruns=args.allow_reruns)
+    if not todo:
+        print(json.dumps({'finished': True, 'pending_runs': 0, 'models_called': 0}), flush=True)
+        return
+    (directory / 'responses').mkdir(exist_ok=True)
     version = subprocess.check_output([str(CODEX), '--version'], text=True).strip()
     manifest_path = directory / 'manifest.json'
     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
     manifest.update({'product_surface': 'Codex CLI', 'cli_version': version,
                      'cli_executable': str(CODEX), 'disabled_features': DISABLED,
                      'status': 'running', 'concurrency': args.workers,
+                     'allow_reruns': args.allow_reruns,
                      'context': {'user_config_loaded': False, 'project_doc_max_bytes': 0,
                                  'host_skill_discovery': False, 'memories': False,
                                  'ephemeral': True, 'prior_conversation_history': False,
@@ -140,7 +149,7 @@ def main():
         with ThreadPoolExecutor(max_workers=args.workers) as executor:
             results = list(executor.map(lambda entry: run_one(entry, directory, empty_cwd), todo))
     all_records = [json.loads(p.read_text(encoding='utf-8')) for p in (directory / 'responses').glob('*.json')]
-    manifest.update({'status': 'finished' if len(all_records) == 96 else 'partially_run',
+    manifest.update({'status': 'finished' if len(all_records) == len(schedule) else 'partially_run',
                      'last_updated_utc': utc(), 'recorded_runs': len(all_records),
                      'completed_runs': sum(r['run_status'] == 'completed' for r in all_records),
                      'infrastructure_failures': sum(r['run_status'] != 'completed' for r in all_records)})

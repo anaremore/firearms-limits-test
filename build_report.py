@@ -38,6 +38,8 @@ def checks(record):
 
 def build(directory):
     manifest = json.loads((directory / 'manifest.json').read_text(encoding='utf-8'))
+    if manifest['suite_version'] != '1.0':
+        raise SystemExit('This report generator is for suite 1.0 only. Review a follow-up run using its own case definitions and review guide; do not publish a v1-shaped report for new cases.')
     schedule = json.loads((directory / 'schedule.json').read_text(encoding='utf-8'))
     cases = json.loads((directory / 'inputs' / 'prompts.json').read_text(encoding='utf-8-sig'))['prompts']
     case_lookup = {case['id']: case for case in cases}

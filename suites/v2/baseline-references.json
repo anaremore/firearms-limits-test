@@ -1,0 +1,73 @@
+{
+  "status": "historical_references_only_not_scheduled",
+  "source_run": "20260917T024135Z",
+  "source_prompts": "../../runs/20260917T024135Z/inputs/prompts.json",
+  "source_results": "../../runs/20260917T024135Z/reviewed-results.json",
+  "rerun_policy": "Do not rerun these prompts unless the user explicitly asks.",
+  "cases": [
+    {
+      "case_id": "D01",
+      "prompt_sha256": "5ebbacb24ecadea8a95d0f2ba9284400bedf6664ac8da27b68554f0d3314d8f0"
+    },
+    {
+      "case_id": "D02",
+      "prompt_sha256": "35e3d73dd6f763316cba6f3281afbb04c729ac03006c70a971ab82aa354f6870"
+    },
+    {
+      "case_id": "D03",
+      "prompt_sha256": "59e17dc5a7ec697a60e5a320093f022177bddb033499e2ffcbf0334ee7e5af7f"
+    },
+    {
+      "case_id": "D04",
+      "prompt_sha256": "7ea2e3316f944772aadcfbc4a7be8a86d684959635d7da24b8a5caab03ee62a4"
+    },
+    {
+      "case_id": "S01",
+      "prompt_sha256": "9743899116c41a3464fa0df0a96b188c83d4e03b9a6beaa6ada481ae9497fdcd"
+    },
+    {
+      "case_id": "S02",
+      "prompt_sha256": "e3830b13ac2b32a50deab547b74b9759086e02726ccbe6946479a498cda32231"
+    },
+    {
+      "case_id": "S03",
+      "prompt_sha256": "24411bc30d25b7d74edc3f5775fc627f9c0fb00060d83fd6351bdac3611a21c0"
+    },
+    {
+      "case_id": "S04",
+      "prompt_sha256": "e0b9bd8af316a0951f45ce97b3b245272117b0079cba5feb50c13ce85c2cfb5a"
+    },
+    {
+      "case_id": "S05",
+      "prompt_sha256": "58e19bb4b50101acd593dc6f85684e401bd947851f9d3213200f59d82fa1b776"
+    },
+    {
+      "case_id": "S06",
+      "prompt_sha256": "65a16eff6c6214c89a4f63519a79424f5b4690332530c4b9b59b82364d0679f4"
+    },
+    {
+      "case_id": "S07",
+      "prompt_sha256": "444301a1038804a4ba732aa61685c6bd6c4cbc07cb778dd5721b59f7d9fa414b"
+    },
+    {
+      "case_id": "S08",
+      "prompt_sha256": "bda405a3b9e08230e961175c575b1c132cd8f14296057b3fe1f620a9b98a24d7"
+    },
+    {
+      "case_id": "S09",
+      "prompt_sha256": "30fc78b6d58bce1cc6f42a41babda5ad3e15890fd1b60381d05156cdbe2beb71"
+    },
+    {
+      "case_id": "S10",
+      "prompt_sha256": "d4710cb6fc0e802b9afab5ee7ef82f4946986bf40125101c6055c87cb3ea9592"
+    },
+    {
+      "case_id": "S11",
+      "prompt_sha256": "ae9489b970c4ec1098e4681de08b198548de898a7e39cba96ee3392df8bc3318"
+    },
+    {
+      "case_id": "S12",
+      "prompt_sha256": "4b493aebd00fb43ca70736d5910cb6f6da095ab3daf7e0c9b991c3b88bf94ebf"
+    }
+  ]
+}
