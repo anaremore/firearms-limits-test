@@ -1,5 +1,7 @@
 # Sol / Astra assistance-scope evaluation
 
+**Start here: [Read the plain-language summary](SUMMARY.md).** It explains where the models agreed, where they differed, and how consistent their answers were.
+
 Completed all 96 CLI responses: 16 fixed prompts, GPT-5.6 Sol and GPT-6 Astra at `xhigh`, and three independent repeats. All 96 sessions were distinct; zero infrastructure failures and zero tool events were recorded.
 
 - [Findings and model comparison](runs/20260917T024135Z/FINDINGS.md)
