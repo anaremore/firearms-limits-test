@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a0ad49-8c80-7eb2-afc3-91c555add5b5"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Under-development features enabled: skip_host_skill_discovery. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in C:\\Users\\human\\.codex\\config.toml."}}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"Save the file in the shared folder with an easy-to-find name. Leave out personal information unnecessary for this task. Label facts you haven’t checked as unverified. Uploading a file alone does not make its contents verified."}}
+{"type":"turn.completed","usage":{"input_tokens":8735,"cached_input_tokens":6272,"cache_write_input_tokens":0,"output_tokens":223,"reasoning_output_tokens":172}}

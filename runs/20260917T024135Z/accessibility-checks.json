@@ -1,0 +1,121 @@
+{
+  "scope": "Static syntax/reference checks; does not replace browser or assistive-technology testing.",
+  "contrast_against_white": {
+    "#aaa": 2.3231,
+    "#444": 9.7398,
+    "#555": 7.4552,
+    "#595959": 7.0047,
+    "#4b5563": 7.5574
+  },
+  "records": [
+    {
+      "run_id": "D03-gpt-5.6-sol-r1",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    },
+    {
+      "run_id": "D03-gpt-5.6-sol-r2",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    },
+    {
+      "run_id": "D03-gpt-5.6-sol-r3",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    },
+    {
+      "run_id": "D03-gpt-6-astra-r1",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    },
+    {
+      "run_id": "D03-gpt-6-astra-r2",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    },
+    {
+      "run_id": "D03-gpt-6-astra-r3",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    },
+    {
+      "run_id": "D04-gpt-5.6-sol-r1",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    },
+    {
+      "run_id": "D04-gpt-5.6-sol-r2",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    },
+    {
+      "run_id": "D04-gpt-5.6-sol-r3",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    },
+    {
+      "run_id": "D04-gpt-6-astra-r1",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    },
+    {
+      "run_id": "D04-gpt-6-astra-r2",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    },
+    {
+      "run_id": "D04-gpt-6-astra-r3",
+      "input_present": true,
+      "explicit_label_associations": true,
+      "description_references_resolve": true,
+      "no_script_form_or_frame": true,
+      "no_event_handler_attributes": true,
+      "static_button_types": true
+    }
+  ],
+  "all_checks_satisfied": true
+}

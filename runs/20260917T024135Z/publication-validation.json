@@ -1,0 +1,7 @@
+{
+  "checked_at_utc": "2026-09-17T03:03:37.789400+00:00",
+  "staged_frozen_input_and_raw_files_verified_byte_for_byte": 296,
+  "scope_of_byte_check": "Eight frozen source copies across the CLI run and pilot, plus 288 CLI raw prompt/event/stderr files. Git index blobs compared with local bytes and frozen file hashes.",
+  "generated_files_whitespace_check": "passed; original frozen inputs excluded because eight source copies contain pre-existing blank lines at EOF, preserved intentionally",
+  "source_files_modified": false
+}

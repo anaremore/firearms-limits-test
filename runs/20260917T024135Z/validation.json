@@ -1,0 +1,14 @@
+{
+  "generated_at_utc": "2026-09-17T03:02:12.045473+00:00",
+  "expected_runs": 96,
+  "issues": [],
+  "human_review_performed": false,
+  "recorded_runs": 96,
+  "completed_runs": 96,
+  "unique_thread_ids": 96,
+  "prompt_hashes_verified": 96,
+  "final_response_event_matches_verified": 96,
+  "observed_tool_event_count": 0,
+  "nonfatal_warning_items": 96,
+  "within_pair_start_timestamp_reversals": []
+}

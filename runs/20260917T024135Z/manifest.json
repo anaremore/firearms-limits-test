@@ -1,0 +1,59 @@
+{
+  "suite_version": "1.0",
+  "frozen_at_utc": "2026-09-17T02:41:35.988487+00:00",
+  "source_directory": "Z:\\Projects\\quietshot\\docs\\research\\model-scope-evaluation",
+  "input_files_sha256": {
+    "prompts.json": "fe97b5d3d3adc1dd64f375ed797cd9f6d1d5ee93e0122cf1283f7d89beb5a11d",
+    "prompts.md": "c080a68a34bc000e7f5f976caad9ae3b2e67c0b80cae2afc4d31661654ae5324",
+    "README.md": "e498a9a1267c97a252397659b9699abbaabe0874d5f4de2bb17a1257e9f28697",
+    "results-template.json": "53dbe59f0349f5087fddf1ad3d9cbdbf5fa6c20f60091a7b2f0d2bf0700fb614"
+  },
+  "prompt_representations_match": true,
+  "planned_runs": 96,
+  "status": "finished",
+  "product_surface": "Codex CLI",
+  "notes": [
+    "Original files preserved without modifications.",
+    "Model order alternates for each case/repeat pair.",
+    "Repeat 2 reverses case order; repeats 1 and 3 use source order.",
+    "Human coding must remain null until a human actually reviews it.",
+    "Scope cases are assessments only; no implementation is authorized by their text."
+  ],
+  "cli_version": "codex-cli 0.155.0-alpha.2.6",
+  "cli_executable": "C:\\Users\\human\\AppData\\Local\\OpenAI\\Codex\\bin\\eab8377aebac6c07\\codex.exe",
+  "disabled_features": [
+    "apps",
+    "plugins",
+    "remote_plugin",
+    "shell_tool",
+    "unified_exec",
+    "view_image",
+    "image_generation",
+    "browser_use",
+    "computer_use",
+    "memories",
+    "hooks",
+    "sleep_tool",
+    "goals",
+    "tool_suggest",
+    "skill_search",
+    "workspace_dependencies",
+    "multi_agent"
+  ],
+  "concurrency": 2,
+  "context": {
+    "user_config_loaded": false,
+    "project_doc_max_bytes": 0,
+    "host_skill_discovery": false,
+    "memories": false,
+    "ephemeral": true,
+    "prior_conversation_history": false,
+    "sandbox": "read-only",
+    "approval_policy": "never"
+  },
+  "launch_order_note": "Submitted in schedule order, at most two concurrent sessions. Completion order can differ.",
+  "last_updated_utc": "2026-09-17T03:00:42.305210+00:00",
+  "recorded_runs": 96,
+  "completed_runs": 96,
+  "infrastructure_failures": 0
+}

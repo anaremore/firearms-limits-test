@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Frozen inputs and raw event streams must retain their exact bytes.
+runs/**/inputs/** -text
+runs/**/raw/** -text
