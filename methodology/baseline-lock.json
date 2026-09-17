@@ -1,0 +1,1736 @@
+{
+  "baseline_run": "20260917T024135Z",
+  "protected_pilot": "20260917T023357Z",
+  "published_revision": "b815f10831f14d20e3e19d122c29e5d3c89b5e58",
+  "hash_rules": "Raw streams and frozen inputs: exact bytes. Other published text: Git LF normalization only. No semantic normalization.",
+  "files": {
+    "SUMMARY.md": {
+      "sha256": "65e0d27130b1cb3dfd71ae13222d90d3ddf2f8ceadc2d67c0db4c02183c0d98a",
+      "mode": "git_text_lf"
+    },
+    "review-rubric.md": {
+      "sha256": "0d82e08373f211b81fea55744eaf01e227e0c7a0dcab79a76c77e455b49ffc39",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/PILOT.md": {
+      "sha256": "a1074e6ccf240ef877e5f6941acfdc6c019eba1ce3e8337fb3b48ee9fa53372f",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/early-intermediate-messages.json": {
+      "sha256": "d759a59b513778cd3799b630eaa208b20e762ef3579f8fe1d241b7cecc0c88bf",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/inputs/README.md": {
+      "sha256": "e498a9a1267c97a252397659b9699abbaabe0874d5f4de2bb17a1257e9f28697",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T023357Z/inputs/prompts.json": {
+      "sha256": "fe97b5d3d3adc1dd64f375ed797cd9f6d1d5ee93e0122cf1283f7d89beb5a11d",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T023357Z/inputs/prompts.md": {
+      "sha256": "c080a68a34bc000e7f5f976caad9ae3b2e67c0b80cae2afc4d31661654ae5324",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T023357Z/inputs/results-template.json": {
+      "sha256": "53dbe59f0349f5087fddf1ad3d9cbdbf5fa6c20f60091a7b2f0d2bf0700fb614",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T023357Z/manifest.json": {
+      "sha256": "349643eb7d165313838902d6869ddedb0bff0b354558d7e54de6b7181e8f60c1",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/normalize-pilot.py": {
+      "sha256": "6a478a8a461fcf468596ec2713f2a03dea4f43a9b8463266ec21c818eaa93d09",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_d01_astra.json": {
+      "sha256": "6df7b1443553b8a7d781ebaa3e55a05b092135b50ae4587f34a742d8d304e6c8",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_d01_sol.json": {
+      "sha256": "081ec5aff43f8ff9672bbd4d8e571508d92d9468e154c2adcee75f87d80f2eb0",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_d02_astra.json": {
+      "sha256": "5d8c761579f7d8572c7778c2bacbadc89a2757624dffd9a94a4d282c8818a0b1",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_d02_sol.json": {
+      "sha256": "23fbe6f892ff194c918140f773814b5223b26031c5ee6aefee297be351466d7d",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_d03_astra.json": {
+      "sha256": "f2e8dda26e2e21a7aaf0eb957c2e8354021f5479cba70d5e868a190f9d737253",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_d03_sol.json": {
+      "sha256": "327ed07d0e8a1d223ae20a1d6f34ae8e76b9a42b2647af0eb33c73aae8a43ed3",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_d04_astra.json": {
+      "sha256": "3107fb0d3606c5fe3078c3f3104cd8d1f236e8a1413f4f253eec19bec018d62b",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_d04_sol.json": {
+      "sha256": "5ccadf6a016344af39f7737b6adfda96dce87de143f622823d56fd9f5ee1dc31",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_s01_astra.json": {
+      "sha256": "62233a01307c38e6fc9c74c18e72d9cc18628821ac134696bb59761fe998d96d",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_s01_sol.json": {
+      "sha256": "a2e1a9c648ffdb2c8b8dd06293df50c32d9bf79e8b3ffc74cbc9a5cfe07b4387",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_s02_astra.json": {
+      "sha256": "44d4b29c4a6916c2c1637913634d6f10014e8c192636a5013a341f19cf30dcfd",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_s02_sol.json": {
+      "sha256": "8dd852d01573b3f0bddd5cfa47d8417c8767b3941b58328c4dfe5e24d35f0f0b",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_s03_astra.json": {
+      "sha256": "41394a9abf224f825e8cd3954f5b7478b5e20f332a8f3f7272915af84b76bfb7",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_s03_sol.json": {
+      "sha256": "12e46f63575e5415f2a4bae4df329fe4b29719b64cabba2596368ab48fd3d683",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_s04_astra.json": {
+      "sha256": "7a043677d65205cd6c5e65845c99ce1fc1748c9e0d90e340c3896b94c88bf5d3",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/responses/r1_s04_sol.json": {
+      "sha256": "575c8a851ea2b341df04433c51b198650aeb813a24229f60204aec52189c43c7",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/schedule.json": {
+      "sha256": "55923261dd4172684aa214dcad84beff08299d9ce288ec9edbc27a77bf0c6ba4",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T023357Z/validation.json": {
+      "sha256": "551acb6e89dd14ca7b1540d5add2cfbae301273ff58b24f649450972182ef395",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/FINDINGS.md": {
+      "sha256": "f4604d19da73fb937948131790f5417a0b97678a85bc08d667c1005053c3b41b",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/REPORT.md": {
+      "sha256": "4a96402bd6f3f6d568e0f0fd1632e54b9c701a8df3afdfceefbd6e18140034b3",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/REVIEW.md": {
+      "sha256": "39b241bccf5a2f94d344c2e292e3faf69a6058c00654d8f45aec3c2d4221fba3",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/accessibility-checks.json": {
+      "sha256": "5c0478b62b73f6c9a0004c45dd6babf34a19a4f3055e0730e0111551abdb14d5",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/direct-review-packet.json": {
+      "sha256": "48406d26711c73f70ed1a69d6085bd87c50a3e4bf89fe6783791f99053532ec1",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/direct-review.json": {
+      "sha256": "020879fa30b0b1c102e46e5c9de937af74f63d7febec2a562242157ef1a50500",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/inputs/README.md": {
+      "sha256": "e498a9a1267c97a252397659b9699abbaabe0874d5f4de2bb17a1257e9f28697",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/inputs/prompts.json": {
+      "sha256": "fe97b5d3d3adc1dd64f375ed797cd9f6d1d5ee93e0122cf1283f7d89beb5a11d",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/inputs/prompts.md": {
+      "sha256": "c080a68a34bc000e7f5f976caad9ae3b2e67c0b80cae2afc4d31661654ae5324",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/inputs/results-template.json": {
+      "sha256": "53dbe59f0349f5087fddf1ad3d9cbdbf5fa6c20f60091a7b2f0d2bf0700fb614",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/manifest.json": {
+      "sha256": "3dedfbca6021e76ae456752bb2de1b6508f50e18dc259e6a4bb1194a83ae4d0b",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/publication-validation.json": {
+      "sha256": "d1a99fc0679a826d8178e086067c90a3d42aaf400cfb3b8cb77de6fb72c98853",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "925d2b68f9883588248f380b42731b3f08c83b9f72e9d5caf52ab32f992b69ae",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "5ebbacb24ecadea8a95d0f2ba9284400bedf6664ac8da27b68554f0d3314d8f0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "caca4caf4e0242a02a37bfd1db2a697c8dbd1fc333ce19d6f5b23e7056b1fc47",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "3de69001cb021d75377e9a636a057605b846d2d8cb4e5db1e9dff395228fca19",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "5ebbacb24ecadea8a95d0f2ba9284400bedf6664ac8da27b68554f0d3314d8f0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "077d7f4565b848fc0c046d7f9c21ec845ba29bb5e59fb41eaf9efde8fbf6d8ce",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "d7059c4e9d42a17abc94cb77b42dea5fd0f06663b8cd5633e9974079dc912a56",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "5ebbacb24ecadea8a95d0f2ba9284400bedf6664ac8da27b68554f0d3314d8f0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "8ce988a9bd69f3d0c4be69d86a5935d19ed2d40f34a83c1df5927ad2e175af39",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "4b24e92f799cfa62ae1f91d27ee690033c9045a35553c879d412ac8bbf0b3994",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "5ebbacb24ecadea8a95d0f2ba9284400bedf6664ac8da27b68554f0d3314d8f0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "905b53b1ac953873e43d587a65c7686d4c8a94857a7f8996bdfc09ad437c4abb",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "a77b9680f43238c27bfe24ad34b03b316add47a9d947898f1223be971159188d",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "5ebbacb24ecadea8a95d0f2ba9284400bedf6664ac8da27b68554f0d3314d8f0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "808be6f829d28724f522a4436932ffac9da0ca2be0c6fd47361435f9154945ee",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "832ed6a2d3b7253d32aa5eab067fa26fdf40d2d706bf269d5dae3d446813deb5",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "5ebbacb24ecadea8a95d0f2ba9284400bedf6664ac8da27b68554f0d3314d8f0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D01-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "390d9e517498d1999ac2ff5c758b3aaade554d897c696eac4c4cb0d874e556a3",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "f6ea0d6f9616c66c09dad29d854b4705cc16b296f18a2bcc1f997364501e9e29",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "35e3d73dd6f763316cba6f3281afbb04c729ac03006c70a971ab82aa354f6870",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "7fc1b9249d5267ae154c9d410db33c5c00619f81a1452801c883890d636f6875",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "ec29b60653a0e2dae85bca5c88f873550ceca360b4edd5b7ef6c74bdab250825",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "35e3d73dd6f763316cba6f3281afbb04c729ac03006c70a971ab82aa354f6870",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "c03d7f2bdafa1dffbc98e9a26446ce18a5faf27a3fa4f1c0ba2c86ab7e821602",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "00905e4db9a226eadc06176c96d0eae098a98f521fb5c51a17f54613930dd179",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "35e3d73dd6f763316cba6f3281afbb04c729ac03006c70a971ab82aa354f6870",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "c1e98a2160efed5c47437937cc262412dbdcc4b3aa430fbfbd0eef88ebfc5501",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "1784df30ce0b7293db4fb104dc93fd6bb967e8bf69bd094237d3ee8b473068e1",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "35e3d73dd6f763316cba6f3281afbb04c729ac03006c70a971ab82aa354f6870",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "4cc7d67adaf9eda19451af8730996bd8ad8d87cb0e7cfe75f24b1cbbaedda067",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "c3504c591e92ff58789b3430c13ae3058dce1ff3b891fbdd7229cd9a2795aa4f",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "35e3d73dd6f763316cba6f3281afbb04c729ac03006c70a971ab82aa354f6870",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "1b16ecce023585466c1a20b2c664949ee4312c5b16636536ae553689587f9314",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "1029fd4a19d04109194e71e9c035d057e973f54779942cd8bb554c2a27f59f27",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "35e3d73dd6f763316cba6f3281afbb04c729ac03006c70a971ab82aa354f6870",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D02-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "727f2e7123af34d447bf943b4902f7c60b1314e37f61bc84237a636721902762",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "8a6e4f9218a29049ad2dad213a0b0506452f65e8a4b21a4d7cf24193c2507920",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "59e17dc5a7ec697a60e5a320093f022177bddb033499e2ffcbf0334ee7e5af7f",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "ca062e65ca5a7fbd3fb3471ca1aac696ccb63feb9cf8fed9068b79ca29d591aa",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "e05d94478e0a1dc6ec3301bbd6748d58e051e60deb22eb55b541c2b1b23fc6c8",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "59e17dc5a7ec697a60e5a320093f022177bddb033499e2ffcbf0334ee7e5af7f",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "a9a7a1dbf738b247fd9936daa2880af75bcfb10c97c75b761c6389c607751c17",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "57be78b0967ec58cdbe774f153ca46f938d5f80a59bd925456e58daf3e8e53a8",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "59e17dc5a7ec697a60e5a320093f022177bddb033499e2ffcbf0334ee7e5af7f",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "ce638cf60350da18f38488f208760ffbe580f3bf83d95acc75343158a112bf63",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "4d744ad9ba27de6dcf53e1dab65a7083107df01e0fadbfadccbc08dd791e3781",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "59e17dc5a7ec697a60e5a320093f022177bddb033499e2ffcbf0334ee7e5af7f",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "c111e49d3b3eb4400fc1b2b40efd5956620ba055286cd4f44036e10f6da34c65",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "82dfe578dd83d1ea4d1b0ceb2b6e1c94dbe6ca1431177f00bf198e6258e36382",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "59e17dc5a7ec697a60e5a320093f022177bddb033499e2ffcbf0334ee7e5af7f",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "6bc1181dc924ce1173841210b7c3d3601ce90972c4dfd5035ebefa58e3621e6d",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "a354b7d77702d1b91f28d4b06ed903497328013bb6499b6e2a62c4872de0afc0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "59e17dc5a7ec697a60e5a320093f022177bddb033499e2ffcbf0334ee7e5af7f",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D03-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "32a466fdd0b229b9bd43ec49712d26a3cdad34f550838898aa8a9603ca391ec5",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "819fe6943a8e3ef10283759ce89dd5f40e2c489f5d6476978dc9efb0656e708d",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "7ea2e3316f944772aadcfbc4a7be8a86d684959635d7da24b8a5caab03ee62a4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "f5708ed60bb5652a69a8beb197ea47564b6af448f3a82db032a74de7b50aa14a",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "dcad94ea6fe9ea382cf34c6aa3ae2f35703850f121f983c7bed29a1c588ce78c",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "7ea2e3316f944772aadcfbc4a7be8a86d684959635d7da24b8a5caab03ee62a4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "6fcff220c67492f5762e8794662f745d0541202a02daabc8bbff885814d47b9b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "62779f576651095523e9f3ac3e5caaaad3ee29293a1616f1a7b44b53ec6765b8",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "7ea2e3316f944772aadcfbc4a7be8a86d684959635d7da24b8a5caab03ee62a4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "b7ee65de8a0170c57d390c307c11a9172e25f1295b1b2fea537f4c59675840cf",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "fdb41e316fe810747c2ba5934fb9e4122c11b3f6c1a94432e44c4cbc01dd1d18",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "7ea2e3316f944772aadcfbc4a7be8a86d684959635d7da24b8a5caab03ee62a4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "53269d265c639f4e3c97571be5ddb74555c5f9ec7b81b2510ddd3b702e2a276b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "c7e1e82c0b909c4f0f4f2901d519b299445d59e90443e68376c4e340261099cb",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "7ea2e3316f944772aadcfbc4a7be8a86d684959635d7da24b8a5caab03ee62a4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "914c53b7f95ab524a096b6f3205330c488fbc410c999e7ad2b860bf7874a669d",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "47f84e054a325ba47dccd2bf2c8f1461f2ec7fa5c9d22d463c1df0fa0364f912",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "7ea2e3316f944772aadcfbc4a7be8a86d684959635d7da24b8a5caab03ee62a4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/D04-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "f20ef85d6d0c3a8f57c3862f1929a3049ae85afecfd8025ec1b76d3a6a2a8909",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "524d0183b0b99959ffd389fcc793357a78e0e1f62643c915a9d5c66c9816422c",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "9743899116c41a3464fa0df0a96b188c83d4e03b9a6beaa6ada481ae9497fdcd",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "ed00a05f80f00d3d1040b929e60db743cfedd28a9576e57d428f8240ee8c4ecb",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "80c7ee909b527ca4a339e2fcf88aa9bd37669ec87bec8a8c2a7b3eb8a34724ad",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "9743899116c41a3464fa0df0a96b188c83d4e03b9a6beaa6ada481ae9497fdcd",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "4afaced0e0dbfaa095cdf28ba1caf0c4f92a536ff85ae75c67d9329d35da8a41",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "c066a5b905d1b3945c5575529545d0433cd4f768ef5f65ee7d7d1e9de047c72c",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "9743899116c41a3464fa0df0a96b188c83d4e03b9a6beaa6ada481ae9497fdcd",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "23620f76bd284d5ecc24d356c9e9379cc010a2073e76ad2d92b8ae1ccf825163",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "129be8ccdf0cf85aad0b4168af63f3504fd240e77ebdfb1287a5015d78a36016",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "9743899116c41a3464fa0df0a96b188c83d4e03b9a6beaa6ada481ae9497fdcd",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "45296f8a2bdeb291e71b407bb61c5e4b628a32fafcdb53a17f44c5c0fc847f99",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "4e3c7ef3ea230b33103dd017060f8dd51457dcedfc80839e6d7d2f82ec9392ff",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "9743899116c41a3464fa0df0a96b188c83d4e03b9a6beaa6ada481ae9497fdcd",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "45d20d28360ba8f71c4af0b5b186fe1584687d150735992a606b523111af5bb7",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "db689516cabb1fc0b79635457ce106870f8783abbd764c72070fa7a63a23eb76",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "9743899116c41a3464fa0df0a96b188c83d4e03b9a6beaa6ada481ae9497fdcd",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S01-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "618d2af21222ac7828805146631323834ffe1f7e6f19de5711a8ac9492f6d1ee",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "8f45f4da2082b07f224b2af2488fdf16aec20a13110c73d3d1844b417d653725",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "e3830b13ac2b32a50deab547b74b9759086e02726ccbe6946479a498cda32231",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "2472a35dcdf7c53268223867e097fd050ac5bfe07bd5bcb63790214c3a345426",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "247d9ab3492f3bdf078a618b4c69c97dd9c32edefbecebfb286c7b283a4ba181",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "e3830b13ac2b32a50deab547b74b9759086e02726ccbe6946479a498cda32231",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "4761639caf44acdda24035ff6e3077e064b066e29e8c64ba51eda1cf4667a63d",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "1d78ba3f2535cfe624fd95289c224648330f253ea5f32cdba85d02f9a1c252c0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "e3830b13ac2b32a50deab547b74b9759086e02726ccbe6946479a498cda32231",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "62599e93dc7dcdc7874e5600c5b082fa0b3a091d24453629bc125826f47f2e65",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "51b0abf9a5c159881e35be7976c15185c3567e3147a6b9fbf04e8dc987312721",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "e3830b13ac2b32a50deab547b74b9759086e02726ccbe6946479a498cda32231",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "25b68dcdff062345f255f8535f0f7a748aefadfa9e89a7701bcff1752598f3cb",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "c66a19293d0f79e2d5b7803eb5b4b951f67a5f14aa48256068883e6391cfc083",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "e3830b13ac2b32a50deab547b74b9759086e02726ccbe6946479a498cda32231",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "8d130231977f2b16ec6237314b797a19f49cd8b031e7b070e20ca05f4528b00f",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "1f4a7fbf7f5dae1cb283b9edbd3c46fe4c6bca4ddcfa5f34ea0d9ca628bde13d",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "e3830b13ac2b32a50deab547b74b9759086e02726ccbe6946479a498cda32231",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S02-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "7ff9af274122b6b8f9889ab7f723db12897a2a93669dcbeca861bd83d5ef3a47",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "34c3f57e602890f5fe8fceb560f887d120c77bd9e680d454a1f93e7d79b20ef4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "24411bc30d25b7d74edc3f5775fc627f9c0fb00060d83fd6351bdac3611a21c0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "7f7e0a2c6efcb67c59fc6b8c83258566dfa77bb51a21e4155b220f34a71ffe9c",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "34f53be499e2a80a1e464d92466fba0a07a7c98635803ca216454fad38689f4e",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "24411bc30d25b7d74edc3f5775fc627f9c0fb00060d83fd6351bdac3611a21c0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "6845766042314aa1e4f36c40059aa485ba9c24935be3f2c985f6f0a6afe9821a",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "2a2c11c5791c87d7a689239152a110d3a4db9817e07cd16f75cdd73f55e2fd93",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "24411bc30d25b7d74edc3f5775fc627f9c0fb00060d83fd6351bdac3611a21c0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "913d2638350050f4fc919eacb2491a7eb2a96ef1a5a36ddda587fb4875fe916e",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "07800c038c7cd4c0821501e828db61f3691144bdf4f51a91aea1af1f571951af",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "24411bc30d25b7d74edc3f5775fc627f9c0fb00060d83fd6351bdac3611a21c0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "7d818f525e5a94897b404e11dda390120251a5cae85b200b57f1ea861c9d8095",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "064a3e18ced753efc8348b87fa1209514812bea3bcf23b82fe177c3f33d7d25b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "24411bc30d25b7d74edc3f5775fc627f9c0fb00060d83fd6351bdac3611a21c0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "b3f8e567be462ecf88dc3eded13c4894dc9ef3ec856d55dc82b291d00a96a05b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "bab91edc6a16b76ed9af11d00244b4a3c26f767a885d12102f19190f39e4e757",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "24411bc30d25b7d74edc3f5775fc627f9c0fb00060d83fd6351bdac3611a21c0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S03-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "c33ec434a32280a75a31109cc427a4b583596e4caf2ac3a3009fcaa0d5edc073",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "40401d79e849604603e606ffdb63b53f499bb7eb22b07e19e8afd2744f9ab3c0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "e0b9bd8af316a0951f45ce97b3b245272117b0079cba5feb50c13ce85c2cfb5a",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "86ad399bda48094220a240aa21c344200e4c0d8fc47236461f82ce2aba27675c",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "93d58693760b217289bbd16692d48923a2f91a07e577ecf7f798018dcbe1689e",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "e0b9bd8af316a0951f45ce97b3b245272117b0079cba5feb50c13ce85c2cfb5a",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "b66ff1840a9a14d58c02dc0cc5b41e739549e822103817b5b48d07d41c8a0aa0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "895946c284d5570354af8e8c41c2095207a98a389731f3efa71a41ef88c03a97",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "e0b9bd8af316a0951f45ce97b3b245272117b0079cba5feb50c13ce85c2cfb5a",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "b1032e227cc891d213a78a5ee6a6cd9bd1d17562520b91ec3654d4dc2d900b0b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "e4b7b167299bb5e695f6eb9a896bbf6af284cd529ffb83e2a74d1e3823c398f7",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "e0b9bd8af316a0951f45ce97b3b245272117b0079cba5feb50c13ce85c2cfb5a",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "5180d3a3ddc5b72a85bc8ff4ce25f31a7c7cc1fe8a51ec36b023fe84e0b74e38",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "90d95c03108c8024e1dafe0c4d659820c3e8fb12d2b29491a5c6170910c66fd1",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "e0b9bd8af316a0951f45ce97b3b245272117b0079cba5feb50c13ce85c2cfb5a",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "4a5391c8cdbbf61fea27c23f3bffa910dcf63c74d35de16cf116988254aae875",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "9fed707ac80bf640d2edbf33b652865bf7b3d841c9a8032b70633f94daf0bc40",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "e0b9bd8af316a0951f45ce97b3b245272117b0079cba5feb50c13ce85c2cfb5a",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S04-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "247d604b44a449720e56e5adefb9ee41a069b1256c55a2c9b375df3494d53244",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "ca2ff8a56f328c3425355db81a4de5fde52d1e4bb6123a60a43879868c2a2bef",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "58e19bb4b50101acd593dc6f85684e401bd947851f9d3213200f59d82fa1b776",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "6666bdd563f4f20a9057b677d1beea32aa10ca9cabd27f07d117f383d4b2eeae",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "08e1948a785737b6cef09ec1633750b14fa77e8ba743af3b030b48401b74bbab",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "58e19bb4b50101acd593dc6f85684e401bd947851f9d3213200f59d82fa1b776",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "3819bf7b8694a03794ca322c4f4bf54a3ce44b76eef340327b74efbf83b30dad",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "93c11d0e799a98513d6d3290861dec1d7c8011adc7e037adbe1931540b8e260e",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "58e19bb4b50101acd593dc6f85684e401bd947851f9d3213200f59d82fa1b776",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "ddafa629b2f77257c55f3103136291382a977c7a4bcf6cb874ea8e577957b515",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "654da4116f0c3f4aa86717b46c33c193ea5111f61e8187afc3cb951c76835bd4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "58e19bb4b50101acd593dc6f85684e401bd947851f9d3213200f59d82fa1b776",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "12798cb86b30ec335426fcabdbc8dc19667ca840527fdd566cf486529988c1c2",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "01c46f37b8e90e0171995d770cb03676276b20ff9e570965c89435ceda7c0727",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "58e19bb4b50101acd593dc6f85684e401bd947851f9d3213200f59d82fa1b776",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "fbe08961af4eac4185289255fbc6343aa8432998cbafa52d7b1e3f0bb11ad328",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "5f77ce1fc7c463b90508408e61a6fe7a3239943ce34d85921105be1111746777",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "58e19bb4b50101acd593dc6f85684e401bd947851f9d3213200f59d82fa1b776",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S05-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "d3ef63728ca5df85c7157e7fabc3d24c7a964ca4d0be90ea9827dc0f0786f984",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "5be2c1dc592f296018076734a76b325981dac1995632dc212f38629c85fd48f3",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "65a16eff6c6214c89a4f63519a79424f5b4690332530c4b9b59b82364d0679f4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "8a99d95a741c111f7c49b7da20da8b363fda74808a70e9d62d800727d67cde18",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "610fa2ffae4041420e023ef89fecf824aeb077481b62495d231f7ca2cc40a2ef",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "65a16eff6c6214c89a4f63519a79424f5b4690332530c4b9b59b82364d0679f4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "803c1a7f4b262f12f0a9954c7e58fa5682bf4c0238761eda0179736d4f67a18d",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "5b0ec76248962dc7afcabf42bf7e97b06ccc4ade2c8f91dff549cbcf4a6d8bef",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "65a16eff6c6214c89a4f63519a79424f5b4690332530c4b9b59b82364d0679f4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "70ac037a7c29c794132fe6c8ed037a31f1dd5ec1c5425a98ed8919ea0ff6b3a6",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "870d3a96fa17619e47345c02cfeca9c1e673f45adf273c10538bd6dc96172bbb",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "65a16eff6c6214c89a4f63519a79424f5b4690332530c4b9b59b82364d0679f4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "f960eabbe5dc3fdce0cd98a77570e803581aba825ec17e5ecad8998271817643",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "597ccaf2b0f6fb9591196aa4d874d39f7fe6dabf0cca121e2ac8327eb37e2542",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "65a16eff6c6214c89a4f63519a79424f5b4690332530c4b9b59b82364d0679f4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "7008e4dad1549fbc336fa6096dbcc3d15d999d231d0f1807d6c7a3552cd0f7b7",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "db82e546c5e540738c800befab24a195ac96f935d810a6e60965d148ced70035",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "65a16eff6c6214c89a4f63519a79424f5b4690332530c4b9b59b82364d0679f4",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S06-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "a89395edcb6476b3af2b66eec991f45a5e7dec3230036b2a8c835f5066e8702b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "abe9c4b132d33555668f07fb4c4335ddf610ad632693f66ca1f48a19606cb0cd",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "444301a1038804a4ba732aa61685c6bd6c4cbc07cb778dd5721b59f7d9fa414b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "0c1e491b9ccba2f6876deb5028aa2b231140b903f2da272b8639973bc029355e",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "bdba0b1c6ad21f96ca5c9966ae02d5334f8cfccb4c800864363cc67dab79e22d",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "444301a1038804a4ba732aa61685c6bd6c4cbc07cb778dd5721b59f7d9fa414b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "43a2d64598bb9b8f447583b905cdd909aa7d6b00369139db3fcf4a5d70346551",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "f11aa0c12032661c949e56ba5b5241c2a701376a34187ada9a1b8b304bf478a5",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "444301a1038804a4ba732aa61685c6bd6c4cbc07cb778dd5721b59f7d9fa414b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "2eb6983a3a8b4a7593c8b87690512d68028c3ff75d341cf8855d9d17d58d4125",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "c14a00db2701e942e6e22df8427fa00170e625431b09f8eae8ee18fcb8565089",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "444301a1038804a4ba732aa61685c6bd6c4cbc07cb778dd5721b59f7d9fa414b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "12db3b1adf52fcdb146542283ea7e3b9939582c21d91d69601a99f1ca29ad86a",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "db48299483ae9d24980387ab347df2c4d7b287c5f2c9d7a0914b44d1a500ed02",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "444301a1038804a4ba732aa61685c6bd6c4cbc07cb778dd5721b59f7d9fa414b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "a265cfacb35af1335e7b9b5a58d927df036684b7e80d6cedb7441c9c8b511675",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "69fcaf23d3f6b83dccd87c5597c88f6702ac8b773f459b7aa9f9196627e6c245",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "444301a1038804a4ba732aa61685c6bd6c4cbc07cb778dd5721b59f7d9fa414b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S07-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "3aa652f64fd88527537777c09f159fafb392e447f96618fb4154e6c8c27bdda9",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "32988e6a05880f438308687edbf0fa0d69ad51b97cdf4f9d9d303503714b6144",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "bda405a3b9e08230e961175c575b1c132cd8f14296057b3fe1f620a9b98a24d7",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "78fc48b38d919dd24b5e0fb0f5eb9165a91e6b96bd0118e0109f3db902a3bc51",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "cae1bf14bcfbabdb0f555a97eab2a6b1f234676a0294a55f0c8634aa693e2699",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "bda405a3b9e08230e961175c575b1c132cd8f14296057b3fe1f620a9b98a24d7",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "c087ea70e16c20f85a2f9094880bf33fbc4348f43f26c52c46df9eed443a8583",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "c37a81e1a6ffb64a442a540cb8797acfb8061405bb8088f21ef10f42a70438bf",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "bda405a3b9e08230e961175c575b1c132cd8f14296057b3fe1f620a9b98a24d7",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "f77102b21bcc75005c95aedaed9a395edacf7a3c0efe680f79a2728b82dba9e9",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "4730a92e3c8efe348cb4e5f0e29a8d0e07d19c4936d0fbf8fd3fc100d4a25fe0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "bda405a3b9e08230e961175c575b1c132cd8f14296057b3fe1f620a9b98a24d7",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "952fbf890161b8fa57e130adfcca83e1faab8a67756d04af4b2c2d6f5cdb8603",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "51fe23de5d2b5cc3632348ac13cc5ad677b1a8cf5470ab56d61e2f3f91b3e322",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "bda405a3b9e08230e961175c575b1c132cd8f14296057b3fe1f620a9b98a24d7",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "ff07ca7f60c184196fe1e9e63e43499009300a39c12fdac632ebe1c33458353e",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "ffcd0c9d46d8c47b7e28995cd91a32fa59906bc31f775d40ee7a6df3842c6743",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "bda405a3b9e08230e961175c575b1c132cd8f14296057b3fe1f620a9b98a24d7",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S08-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "d875e6e79c66cd71da1812367b1bd0887097c05da7b72ba0c9d9318293bc92ba",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "5e9d9004fbf9bb49282e209f36b1c51f7012b905f662e36d66e67ad4b2d99f84",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "30fc78b6d58bce1cc6f42a41babda5ad3e15890fd1b60381d05156cdbe2beb71",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "a4d4534cd069250bc9140ee09bc6703d9ccb7c776121186f681c8ad8e192881f",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "25188aeff01a149cad4d100edc768d4e2cdbc6cd9c258d3862180608c00576fd",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "30fc78b6d58bce1cc6f42a41babda5ad3e15890fd1b60381d05156cdbe2beb71",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "f5e2760d0f2a9f5bda7d2bffc8aec620fd624d34d02b6204c5b296dab0413b15",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "02f2fd80b493327086b7f1d1500c49cb5fbc64fb34e9c7ab3b65884828397154",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "30fc78b6d58bce1cc6f42a41babda5ad3e15890fd1b60381d05156cdbe2beb71",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "8bc5ce1c527c123cb1935175ee3c1f80a30a1e12f3b30c544634739a40e48c1c",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "6d86d6b5ecb8f0e4f633162c97884abdfbed61339220a297a5f4f2844ca2e202",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "30fc78b6d58bce1cc6f42a41babda5ad3e15890fd1b60381d05156cdbe2beb71",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "d77fb10d57a9acad105e0baa07b8fbfc3dcc36011d246918f5f122e10540d692",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "e2ebdd9e046b000d878441a61172cd823fb3f6b40637456ac5edd5d9e3e9d96a",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "30fc78b6d58bce1cc6f42a41babda5ad3e15890fd1b60381d05156cdbe2beb71",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "561ee941f2e2c250499046530295de96026b44c2105972b3d645617d489587ad",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "39cdb7a20b73d6f14d43344763b8c5880b3be32756d32b0367e34d08c0354e9d",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "30fc78b6d58bce1cc6f42a41babda5ad3e15890fd1b60381d05156cdbe2beb71",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S09-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "efd141deb7592f9c496d4d0c2679d8a31b04473d43813cfa9ff353f8dc429fc8",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "1728d5bea390b7a4eee75e506748e71481f4804df364da4cd89488eadabdc608",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "d4710cb6fc0e802b9afab5ee7ef82f4946986bf40125101c6055c87cb3ea9592",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "85a63f2d5bf0cb9832a2be74202287979aec683672f94acac6f9a4e889e67052",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "16dba55c06894106a80db4045bc9c371f442371148f09844a3c66c2b26fd4914",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "d4710cb6fc0e802b9afab5ee7ef82f4946986bf40125101c6055c87cb3ea9592",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "42fd6c9aea86b97036b3835d01e27428b1884ec1fd8d473823552faae2f41433",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "117aeb92b846312a8317ea94148a28a2dc84a763e73d5202bef2cef972defb6a",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "d4710cb6fc0e802b9afab5ee7ef82f4946986bf40125101c6055c87cb3ea9592",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "2ad9af15dff4ac190b3c45ef815d4bb896aae90a31a6239655f6c6ee0f22c812",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "f5a57d5cc7719d2e5e983c3286f945f1af2b5c4f68f40b150396b493f34b1674",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "d4710cb6fc0e802b9afab5ee7ef82f4946986bf40125101c6055c87cb3ea9592",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "732a3c906c4c203b6b40360b36e86be4c062a7fe78fd7896765f8c605562f32b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "866d37d8a0892fad1c41c2647201f94b251f879356030c7218ad7f0b34fd4459",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "d4710cb6fc0e802b9afab5ee7ef82f4946986bf40125101c6055c87cb3ea9592",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "6698eb1f22c2aa6596262c7a4509a3690780ad462f4c9a99db56600c3c572437",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "8481ed65f716edc689ed5d75b5ecdcca417b618d2b47519accc241bad8dc6952",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "d4710cb6fc0e802b9afab5ee7ef82f4946986bf40125101c6055c87cb3ea9592",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S10-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "d017ac435e0784b8ab45a80831909edf76ad82b11884545dd5a708d65bd8aa90",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "97e95e1707f06c766f96343f3c676aeec7f0963e350e5ed5bc4481e6df54b9f5",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "ae9489b970c4ec1098e4681de08b198548de898a7e39cba96ee3392df8bc3318",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "a639b9826d35e322440a6b89fd4bd52592cfdbfb1a4a670915ba89df7209c089",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "772af9514f2bc28919059e45899cb3b290343f905d019091c6c621c1ebb6edbe",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "ae9489b970c4ec1098e4681de08b198548de898a7e39cba96ee3392df8bc3318",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "bacceef5f8f9f717a1ce754e5dba75686dd7f302806e88c4eafb078874ea04f0",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "ec01a14117e0c3fde2099da9d4e3585613ebe445d74b8cd51db555cf430a2202",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "ae9489b970c4ec1098e4681de08b198548de898a7e39cba96ee3392df8bc3318",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "4614f3f42c06f9c819114c9db4f296c1d49597af1404a56b71fb83d33d696cf5",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "f180f8dddd8f02c2167595fc6dbb26a888f0754cf7b0841d031adfb1719381e7",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "ae9489b970c4ec1098e4681de08b198548de898a7e39cba96ee3392df8bc3318",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "46dc1f3b7bca71caa045fe6c4339f77ee22aca40cd85f9cb1665a39a0204fbcb",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "0cf6f891ea7a621bc73b8ad3d40def560c0efdc8e79c9fb511a80837502cbad1",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "ae9489b970c4ec1098e4681de08b198548de898a7e39cba96ee3392df8bc3318",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "21e5902b47d39cec6b58bf2efc1fcbf52f12c07a225066dbc17ce66c30a10929",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "ba8addf3ace5625d1be1a28a6bd58711f95fa53d4851f556dcc924bec16c3011",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "ae9489b970c4ec1098e4681de08b198548de898a7e39cba96ee3392df8bc3318",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S11-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "686745a518919c3a699d4b4aceb669e225943aeeb9c5ba0ea4b1dac4baf85a98",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-5.6-sol-r1/events.jsonl": {
+      "sha256": "3ec2511f1d6bde09135e2fbda92e6aca576122dc80264e184fa340fd823589bc",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-5.6-sol-r1/prompt.txt": {
+      "sha256": "4b493aebd00fb43ca70736d5910cb6f6da095ab3daf7e0c9b991c3b88bf94ebf",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-5.6-sol-r1/stderr.txt": {
+      "sha256": "bd7910c63da05e93ceacf88a468aec1011cdf815755f9209a44ce05b9351e7d9",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-5.6-sol-r2/events.jsonl": {
+      "sha256": "e387f80d1aade62e45e863175d42bcbd932f1e1b1e3600e87e41d58eb813086f",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-5.6-sol-r2/prompt.txt": {
+      "sha256": "4b493aebd00fb43ca70736d5910cb6f6da095ab3daf7e0c9b991c3b88bf94ebf",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-5.6-sol-r2/stderr.txt": {
+      "sha256": "66ca210cfb0c93e8eddc47cab5eed64c90b68a0ae8d02f9193d14f3cf67447fc",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-5.6-sol-r3/events.jsonl": {
+      "sha256": "5828b0ca30854c631b5b686152c402ecf9ae10035dc602515be479e1cae04a74",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-5.6-sol-r3/prompt.txt": {
+      "sha256": "4b493aebd00fb43ca70736d5910cb6f6da095ab3daf7e0c9b991c3b88bf94ebf",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-5.6-sol-r3/stderr.txt": {
+      "sha256": "0a755faed4b2154b038194da7d78a40b3f524c77627bd1472d31cece2529b4f6",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-6-astra-r1/events.jsonl": {
+      "sha256": "84dc19e64f285edf0d39a8b4de0d3aaca1504f1979a33f10f9a8aa4943dbc269",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-6-astra-r1/prompt.txt": {
+      "sha256": "4b493aebd00fb43ca70736d5910cb6f6da095ab3daf7e0c9b991c3b88bf94ebf",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-6-astra-r1/stderr.txt": {
+      "sha256": "c3a5c5bcac30d4ea77b71b9fb675169ddba4903b5e3f858bdb282ff5ac4e1186",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-6-astra-r2/events.jsonl": {
+      "sha256": "8c49a771e4fdd1217b3e83a29dc38787996d25009238fed8663e884ecddf8b87",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-6-astra-r2/prompt.txt": {
+      "sha256": "4b493aebd00fb43ca70736d5910cb6f6da095ab3daf7e0c9b991c3b88bf94ebf",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-6-astra-r2/stderr.txt": {
+      "sha256": "a68cd27ef0dc20270b534d711cfca8aa56a9acd80a4076b2648e1e58cde20dfd",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-6-astra-r3/events.jsonl": {
+      "sha256": "d02c070cf519a992bc3c57484a284bc4e10f64e3437f1923cf16f406cba9743b",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-6-astra-r3/prompt.txt": {
+      "sha256": "4b493aebd00fb43ca70736d5910cb6f6da095ab3daf7e0c9b991c3b88bf94ebf",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/raw/S12-gpt-6-astra-r3/stderr.txt": {
+      "sha256": "7802f17479024b4b99c7fca78cf7ffb2dee3f79b9a14e5aa4b8b5d986123d248",
+      "mode": "exact_bytes"
+    },
+    "runs/20260917T024135Z/responses/D01-gpt-5.6-sol-r1.json": {
+      "sha256": "9bf84edbfc7ae356f602e3713ee3c2625c3572a5a92cd91f0d12cacc15a53f53",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D01-gpt-5.6-sol-r2.json": {
+      "sha256": "77609f602ad658207148a729d110adf7750a2414565ff77a94241d458fe7ca18",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D01-gpt-5.6-sol-r3.json": {
+      "sha256": "d72b78a51474698efce98a25d54f5f86991da9937733b9733814280c4789d157",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D01-gpt-6-astra-r1.json": {
+      "sha256": "4268bf7318a8e552f34f7aa137367b4db147424d55e0b6a6adbe55b7959fa9e2",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D01-gpt-6-astra-r2.json": {
+      "sha256": "6cd8c4bae21cae84c0e17b8141e4a4ae155eae4351b275731fc0cff12665f05a",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D01-gpt-6-astra-r3.json": {
+      "sha256": "9b696f1070e73552b333f1cc4aacbef03fc904905a6dea0fc1d44638a730a7ed",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D02-gpt-5.6-sol-r1.json": {
+      "sha256": "89b4334038b8715bf87e7fc5aa32f1fcabd932d6c19eb86c98bd9004f0576c9f",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D02-gpt-5.6-sol-r2.json": {
+      "sha256": "32f604af064cefd7e77cb6bb1b5c3c1e742431831ed13f5a912bad1db18ffc6e",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D02-gpt-5.6-sol-r3.json": {
+      "sha256": "d234f6b3efb6066fd932413e7ed4239398ec66c8d290db12fecc9f50130b3036",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D02-gpt-6-astra-r1.json": {
+      "sha256": "be454743b885831e3aee885f92ab2df32fdd25cd5bea8053c36dc02e85aa1657",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D02-gpt-6-astra-r2.json": {
+      "sha256": "3158e835ffc756323537532f236a7a7086da458ea097880fa59279502063789f",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D02-gpt-6-astra-r3.json": {
+      "sha256": "84b8c47da300846ed067d5232d658dc2edca6999611dc9723cd5a3888bcbabf4",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D03-gpt-5.6-sol-r1.json": {
+      "sha256": "82ef792b4cc93344f789800589165eb33fb7ade64907f6473623e6d27350f593",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D03-gpt-5.6-sol-r2.json": {
+      "sha256": "547fea623be6239ea65771a60b008d681314514ca0756e91fdfa1d5024ef6c08",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D03-gpt-5.6-sol-r3.json": {
+      "sha256": "e4d5c86acb835dd831df22536db4b5bdc4191292f09815e07740a748f81ec84c",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D03-gpt-6-astra-r1.json": {
+      "sha256": "e5a83d4dc6f72ba0759a5bcae27601fb179dc196b66db32273476fd6003b7f53",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D03-gpt-6-astra-r2.json": {
+      "sha256": "d514bd28799ba942fce6a81e55eaa4706a9fc74a22e68ac4cc0471363191631c",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D03-gpt-6-astra-r3.json": {
+      "sha256": "99b5c48f14cdfbff46380a67f2608e80a9d33bc3de0ac3ab410a3f6603279693",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D04-gpt-5.6-sol-r1.json": {
+      "sha256": "c89e6b0b16304878bad3aa2dd9d1dbfe1c42638a2d4ff44d422eef1f4123413d",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D04-gpt-5.6-sol-r2.json": {
+      "sha256": "5ba4be12b233e1d1a9c83cc523f8965a6b281176bc60552382b2ad9a7ad499ee",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D04-gpt-5.6-sol-r3.json": {
+      "sha256": "c8753929cb2513b29741fece34ede58b5427ef0290413976fb012a39787552df",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D04-gpt-6-astra-r1.json": {
+      "sha256": "90fa98bbc55f48562a1d1ff17f7b55aad7da41c1703d54cb27bc1e317e77537f",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D04-gpt-6-astra-r2.json": {
+      "sha256": "96f83cdb29e8c34966be497743b7fe828d2497f4bfc28c19e89d949bc4ed587d",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/D04-gpt-6-astra-r3.json": {
+      "sha256": "4068324b29e64c805f345def48b267f3ce31f3102508ae3fa3a51b5b543b421b",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S01-gpt-5.6-sol-r1.json": {
+      "sha256": "ff3d6e3e1de772a4f76b2c37881d51b75a70e202f5da970a94693a668096fb24",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S01-gpt-5.6-sol-r2.json": {
+      "sha256": "fa322ceefb958cafe84fc1ffdaee34047e08ee4b82331eff2ac1e3d1bb42e435",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S01-gpt-5.6-sol-r3.json": {
+      "sha256": "12384f4db71d13f6c6c4bc870968329d0c5045f2f33f41fa4e914b6b153324d6",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S01-gpt-6-astra-r1.json": {
+      "sha256": "5bc123e5c70c456cb88cd8df0bd7a59d3ea5dad1e259878dedf74aaf7494739d",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S01-gpt-6-astra-r2.json": {
+      "sha256": "dd11e2fe59fa1d9c8c2a1a588e9aa7b98883bdec371b4ccb3fde4a5aa83a87ff",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S01-gpt-6-astra-r3.json": {
+      "sha256": "8781c88e7dce8a58290b73f0c08fe3cd1a101fcaedcf67f37d1f911a25164a0d",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S02-gpt-5.6-sol-r1.json": {
+      "sha256": "a302c4e197a4a9899bce739fa258357c9698e3e439312d024c492f0764a01823",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S02-gpt-5.6-sol-r2.json": {
+      "sha256": "64af08494952c55e11068af106bddf5ed9d94d2b3e8ac774438605f3e66f8c4b",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S02-gpt-5.6-sol-r3.json": {
+      "sha256": "48bbf264cd95ff90cc5eb70e5dbfd47e29e31dbf15a42a6fdd2f2e5327027e28",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S02-gpt-6-astra-r1.json": {
+      "sha256": "9411717b6f9fbddce48e1bc434f4a05af3979c85857cffbccbef238fdd93fa89",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S02-gpt-6-astra-r2.json": {
+      "sha256": "f9a8c15c8b176a2dd1975b891404303a99e66b2f967821667582d8f6dbd0dd44",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S02-gpt-6-astra-r3.json": {
+      "sha256": "24928486d212d071017d1988c5a02c5a67ad3063eb521d3e26134da85fe715d0",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S03-gpt-5.6-sol-r1.json": {
+      "sha256": "de4c7e4e70cc6f4c994a5180f5d55dfde08d02e1070b57b9a8ce87ff6da816b1",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S03-gpt-5.6-sol-r2.json": {
+      "sha256": "e76f617efb2b83b32943af7fd4a2b3f642568e9217f208c019ac146c4c45436d",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S03-gpt-5.6-sol-r3.json": {
+      "sha256": "e7c495478b999986a5b6d8642e5605bf751f2411806d88bf90ffb72714ca7996",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S03-gpt-6-astra-r1.json": {
+      "sha256": "5f7177fa686b14b3160dd87143e3ef0b0435c6b3d2553e8dce028e423d1cfce3",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S03-gpt-6-astra-r2.json": {
+      "sha256": "95abc2adfbe4462439040979604a8b232b1bd9c775cd791e56a5cee543c710ec",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S03-gpt-6-astra-r3.json": {
+      "sha256": "c85af578c57217419cb6a30f01457b59ddbfabb1a3da5144c4c18d147ef2c748",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S04-gpt-5.6-sol-r1.json": {
+      "sha256": "cce2fe9cb9358dfe6acdcfeaa40dd95c954e556ad560e1700968268943da5b68",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S04-gpt-5.6-sol-r2.json": {
+      "sha256": "18780b21b5739ce956e5863453a21947f78b9872597cf701b9c0a6b9b313e84b",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S04-gpt-5.6-sol-r3.json": {
+      "sha256": "f26e56ca43f8495f7528d1b437a2d5a63a9a9cad6924b733c54706a30d36a138",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S04-gpt-6-astra-r1.json": {
+      "sha256": "1ebff54cafe95ce0e698f4582d34be201d99a33e23247d635b755deafad17a16",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S04-gpt-6-astra-r2.json": {
+      "sha256": "565bb04cd20b3281bd343ac4ff3855f0d0dd9eb3c25dab81825c21c645433ce2",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S04-gpt-6-astra-r3.json": {
+      "sha256": "83d0c6eeb84732a2eadf93734f2f6e2a666bf4e9588d8b9988273854072822fa",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S05-gpt-5.6-sol-r1.json": {
+      "sha256": "b6924d1c22763908913e651a9bca85a3931e7e2978b4868d0e006a264323200d",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S05-gpt-5.6-sol-r2.json": {
+      "sha256": "553142f8a8d465e1106b0dafbb4455a08a22b7ef8e4e39d10f0c89e2f666340d",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S05-gpt-5.6-sol-r3.json": {
+      "sha256": "05adefba49b974fd45b8ae2201af4a1086767eb95c93c6131efa0fe15a7c6cd5",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S05-gpt-6-astra-r1.json": {
+      "sha256": "4e061dcef55a8916c6a171ec9d0bae36c0561d6a6df178b4ee08300ab760ea16",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S05-gpt-6-astra-r2.json": {
+      "sha256": "e0755cf0bcc4a8aadaeef7db0900f0655196c0152a6686975a0abf596c72b8fb",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S05-gpt-6-astra-r3.json": {
+      "sha256": "62d5f4129fb973e603a1caf3ba3a003bef3657ab4e8cd95a1068e2334e6bc720",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S06-gpt-5.6-sol-r1.json": {
+      "sha256": "456e76301bfc5d729e597f9048284297607c5d4690d40916bc762787eb11fb90",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S06-gpt-5.6-sol-r2.json": {
+      "sha256": "fa6bdce881c87ad32e28a02f672a98ba1102eb69f61f36e591e2a44d0b3089ab",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S06-gpt-5.6-sol-r3.json": {
+      "sha256": "9482aecffbb659f96f3bbf7207c840a34717d90944818c07c68c8f1bf01f7d26",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S06-gpt-6-astra-r1.json": {
+      "sha256": "66d246218420bb07fac84a56864de4b9064864d06b397d8bc8d5df1e35384e1c",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S06-gpt-6-astra-r2.json": {
+      "sha256": "9984706cbf277eb3dfb10d876c3d71f3117a625eb2b71d41906bf111a456f2d7",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S06-gpt-6-astra-r3.json": {
+      "sha256": "fc9fe790f32f11fc57d12177dacd63a002e9147fd0ceeb8d29097b0e9b593f55",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S07-gpt-5.6-sol-r1.json": {
+      "sha256": "ab2350d5c1b1293b9144072d56ba85cd96b3ce76e470bf2336f8e6e0f9669b45",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S07-gpt-5.6-sol-r2.json": {
+      "sha256": "8cc674c13c087d5feb89c5430075c03c5bfabedd92dede3fc3a0172c54db8932",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S07-gpt-5.6-sol-r3.json": {
+      "sha256": "7c152a8aae22fa90826c3ddd8b41d381118854a78388147206032252701b72a9",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S07-gpt-6-astra-r1.json": {
+      "sha256": "95a533195241e0073c619a3cabeb175a85e6d8dc00c92df9d82a0180e9f1c25b",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S07-gpt-6-astra-r2.json": {
+      "sha256": "396e1e46c385ebfc6c575fd8374f162acfcd4fca9fbb2603f1c10b3c44fe5bf4",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S07-gpt-6-astra-r3.json": {
+      "sha256": "20b7d5f1a833c4666acdd3674a603a5e72ed903a07b3436b02c542f1e30f9056",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S08-gpt-5.6-sol-r1.json": {
+      "sha256": "3665f92aec750c9e7e51f5336808d1ddc3183aa1e5fbf6011989ff426141ebe5",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S08-gpt-5.6-sol-r2.json": {
+      "sha256": "2804e5392f3f147f5a15b8ebf3c42d0356f01c16345b42c255620bcc3b15cfec",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S08-gpt-5.6-sol-r3.json": {
+      "sha256": "1226a16433d698c88c2bcafdd29cecb45287d2a00595fa56f8c4f2c956b5aefb",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S08-gpt-6-astra-r1.json": {
+      "sha256": "06a700b93ba4a1a9f6250b5c1f7e5dc20817f66eb4a2aa6467a82ccb84810334",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S08-gpt-6-astra-r2.json": {
+      "sha256": "47de974170d192a4e4edfda1c32c4a0a4b0a1b36e71e2a81ccdb5b8ddb3897ce",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S08-gpt-6-astra-r3.json": {
+      "sha256": "29cb4a097d6a402053b7e821974fe397a4cde0076a218b15fe106eac55e4c212",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S09-gpt-5.6-sol-r1.json": {
+      "sha256": "3f54a56fca59419f8c2b079ddab8e61eb84e8cfdf407f5b21c5eb124b5d3eb3b",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S09-gpt-5.6-sol-r2.json": {
+      "sha256": "9fc7a9eec1ac87c6307a2a8ecabbbf37237eb35458259c3a98ae7caacff8a65e",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S09-gpt-5.6-sol-r3.json": {
+      "sha256": "b57edcfa326f1bb9fdd63f59bb8be442d067530b5a69b29b419e4ac190bf9203",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S09-gpt-6-astra-r1.json": {
+      "sha256": "82cf135d2e85b8a28041c6fdf63848037b999a06ef543380546dfa8603081dec",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S09-gpt-6-astra-r2.json": {
+      "sha256": "78b638e9ca3a0a986d5fdca5023ec03d1efecb94cc150e9002fd730dd5446bf8",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S09-gpt-6-astra-r3.json": {
+      "sha256": "3bf13ac909f2a79348f2ebf8fa288fde74ec0d8dccb7bad7e619cd7d0d1524a9",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S10-gpt-5.6-sol-r1.json": {
+      "sha256": "34a490e1f7f1eadcbcf0d5dc368fd32c4bc4461f135f23accd6045a63d105960",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S10-gpt-5.6-sol-r2.json": {
+      "sha256": "faaaea4c774dc6b44d86360d560d0137eedfcf43a0249b0e9f3f8d82aa03e7ae",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S10-gpt-5.6-sol-r3.json": {
+      "sha256": "86c44cb03bd9ea306a868fc138821a949e5c5cae6af2c13442778c7ea654961b",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S10-gpt-6-astra-r1.json": {
+      "sha256": "cce39f41b98f444dd9ad5712d7c16607e2059e99c10d14b379cea412dfc2a9ff",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S10-gpt-6-astra-r2.json": {
+      "sha256": "5c5016da2c2934c257e950d3e186b249339d16680b1c1d96733f0f72c50b0e88",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S10-gpt-6-astra-r3.json": {
+      "sha256": "b6377e7a7bfc6b96c013ddf01d01834534e0fb0af326745311629f432fb132eb",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S11-gpt-5.6-sol-r1.json": {
+      "sha256": "96528761f3e8c9cd587ab331578e1538d74e32dc32dc8f1b89f0c11770032c92",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S11-gpt-5.6-sol-r2.json": {
+      "sha256": "fe7ce229062efa85b7f016700e9b7effeeddbc7b253ae903fbbf8d71772ea3d6",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S11-gpt-5.6-sol-r3.json": {
+      "sha256": "2243a1c8c0285b2376cd4333ba5e0e5abcc1be9c5445c2ed54553b7a531b0aaa",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S11-gpt-6-astra-r1.json": {
+      "sha256": "848b313dad84af10133706c8fd9b9327bda1fe46b82da39a8c43e0e5049c584b",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S11-gpt-6-astra-r2.json": {
+      "sha256": "8ed449a08c3f7fd0536c339e9ab76205d3de1383bf74158fcb1385712e538547",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S11-gpt-6-astra-r3.json": {
+      "sha256": "78bf8fb1c89df6854df4af65d0ee99a09996e7adab541dc95f6f9f8bf52c1954",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S12-gpt-5.6-sol-r1.json": {
+      "sha256": "8a3dc4702a3d762f18fd3b7805fbf2eb6434b80a3be699b09a2784477ea60b72",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S12-gpt-5.6-sol-r2.json": {
+      "sha256": "4497c4d69a377b8e873b407f5efb73d1689e1849e861e0d7ee779b921be12ba4",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S12-gpt-5.6-sol-r3.json": {
+      "sha256": "86374b671f360d9e9fd321f32a6dabceecb216dd9265b1c47cfe337416a4866d",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S12-gpt-6-astra-r1.json": {
+      "sha256": "195aecdbe7aa3221185e115c61b798229d8044e1867e9e8cd913b2bc697d4354",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S12-gpt-6-astra-r2.json": {
+      "sha256": "f6f4f73aa9901bcdb6ac7e52856f230a746798e98e87e621478f990c3c1baf94",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/responses/S12-gpt-6-astra-r3.json": {
+      "sha256": "d61f06d32d6f2a87a46fdb9c8949398d80442fd461728f6e09b9756971e0eb75",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/results.json": {
+      "sha256": "da92ea9cc87f17257922a7640adc500416adce6c2c6655ec7dbd65649a07bd9a",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/review-map.json": {
+      "sha256": "b3abcffd7153384870f6a2750105d69a462686de79d115c64d54f60dc97aebb9",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/reviewed-results.json": {
+      "sha256": "8cea4abf377171fa5db2ad0b26ce8f6d5d6c6ddc14d81270b73ebf79f2016763",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/schedule.json": {
+      "sha256": "55923261dd4172684aa214dcad84beff08299d9ce288ec9edbc27a77bf0c6ba4",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/scope-review-packet.json": {
+      "sha256": "b6d579775ea8dc2ad162b12f538157c1d9f0d4fcb4debeff8df43927bed61beb",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/scope-review.json": {
+      "sha256": "9542c6bf51cad55c7998403bbf11cc075b668f298f651a81dcbc63bcb48665da",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/summary.json": {
+      "sha256": "562e32a2c61540bb0694c0d9e87e887431779520a4205e6880356ee40d55391f",
+      "mode": "git_text_lf"
+    },
+    "runs/20260917T024135Z/validation.json": {
+      "sha256": "ea7a286f5bf7a56c9908b725ca949215056048ff43f9fcec3122a38a5ce72682",
+      "mode": "git_text_lf"
+    }
+  }
+}

@@ -4,6 +4,7 @@ from datetime import datetime, timezone
 from hashlib import sha256
 import json
 from pathlib import Path
+from reliability import protect_baseline
 import re
 
 ROOT = Path(__file__).resolve().parent
@@ -37,10 +38,13 @@ def checks(record):
 
 
 def build(directory):
+    protect_baseline(directory)
     manifest = json.loads((directory / 'manifest.json').read_text(encoding='utf-8'))
     if manifest['suite_version'] != '1.0':
         raise SystemExit('This report generator is for suite 1.0 only. Review a follow-up run using its own case definitions and review guide; do not publish a v1-shaped report for new cases.')
     schedule = json.loads((directory / 'schedule.json').read_text(encoding='utf-8'))
+    if len(schedule) != 96:
+        raise SystemExit('Legacy report supports only the original 96-slot design. Use the separate measurement and replication analysis rules for other designs.')
     cases = json.loads((directory / 'inputs' / 'prompts.json').read_text(encoding='utf-8-sig'))['prompts']
     case_lookup = {case['id']: case for case in cases}
     records = []

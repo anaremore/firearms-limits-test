@@ -2,9 +2,11 @@
 from collections import Counter
 import json
 from pathlib import Path
+from reliability import protect_baseline
 
 ROOT=Path(__file__).resolve().parent
 folder=Path((ROOT/'active-run.txt').read_text(encoding='utf-8'))
+protect_baseline(folder)
 rows=json.loads((folder/'reviewed-results.json').read_text(encoding='utf-8'))
 validation=json.loads((folder/'validation.json').read_text(encoding='utf-8'))
 assert len(rows)==96

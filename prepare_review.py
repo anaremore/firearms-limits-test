@@ -2,6 +2,7 @@
 import argparse
 import json
 from pathlib import Path
+from reliability import protect_baseline
 import secrets
 
 ROOT = Path(__file__).resolve().parent
@@ -9,6 +10,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--track', choices=('direct','scope','all'), default='all')
 args = parser.parse_args()
 folder = Path((ROOT / 'active-run.txt').read_text(encoding='utf-8'))
+protect_baseline(folder)
 results = json.loads((folder / 'results.json').read_text(encoding='utf-8'))
 selected = [r for r in results if args.track=='all' or (r['case_kind']=='direct')==(args.track=='direct')]
 assert len(selected) == {'direct':24,'scope':72,'all':96}[args.track]

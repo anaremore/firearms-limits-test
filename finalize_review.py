@@ -2,9 +2,11 @@
 from collections import Counter
 import json
 from pathlib import Path
+from reliability import protect_baseline
 
 ROOT = Path(__file__).resolve().parent
 folder = Path((ROOT / 'active-run.txt').read_text(encoding='utf-8'))
+protect_baseline(folder)
 mapping = json.loads((folder / 'review-map.json').read_text(encoding='utf-8'))
 results = json.loads((folder / 'results.json').read_text(encoding='utf-8'))
 by_id = {r['run_id']: r for r in results}

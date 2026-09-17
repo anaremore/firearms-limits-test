@@ -5,12 +5,13 @@ from datetime import datetime, timezone
 from hashlib import sha256
 import json
 from pathlib import Path
-import re
 import subprocess
 import tempfile
 import time
 
 from evaluation_history import reject_unapproved_reruns
+from reliability import (protect_baseline, parse_decision, future_provenance,
+                         harness_provenance, validate_records, validate_frozen_inputs, read)
 
 ROOT = Path(__file__).resolve().parent
 CODEX = Path('C:/Users/human/AppData/Local/OpenAI/Codex/bin/eab8377aebac6c07/codex.exe')
@@ -31,6 +32,7 @@ def dump(path, data):
 
 
 def run_one(entry, directory, empty_cwd):
+    protect_baseline(directory)
     run_id = entry['run_id']
     folder = directory / 'raw' / run_id
     folder.mkdir(parents=True, exist_ok=False)
@@ -41,7 +43,7 @@ def run_one(entry, directory, empty_cwd):
             '--skip-git-repo-check', '--sandbox', 'read-only', '--json',
             '--color', 'never', '--model', entry['model_identifier'],
             '--cd', str(empty_cwd),
-            '-c', 'model_reasoning_effort="xhigh"',
+            '-c', 'model_reasoning_effort='+json.dumps(entry['reasoning_setting']),
             '-c', 'approval_policy="never"',
             '-c', 'project_doc_max_bytes=0',
             '-c', 'web_search="disabled"',
@@ -57,6 +59,8 @@ def run_one(entry, directory, empty_cwd):
     try:
         process = subprocess.run(args, input=prompt_bytes, capture_output=True, timeout=360)
         stdout, stderr, returncode = process.stdout, process.stderr, process.returncode
+    except OSError as error:
+        stdout, stderr, returncode = b'', str(error).encode('utf-8'), None
     except subprocess.TimeoutExpired as error:
         stdout, stderr, returncode = error.stdout or b'', error.stderr or b'', None
         timeout = True
@@ -102,11 +106,14 @@ def run_one(entry, directory, empty_cwd):
         'usage': [event.get('usage') for event in events if event.get('type') == 'turn.completed'],
         'thread_id': next((event.get('thread_id') for event in events if event.get('type') == 'thread.started'), None),
         'command_argv': args,
+        'provenance': future_provenance(directory, entry, events, args),
+        'collection_batch': read(directory / 'manifest.json').get('collection_batch', 'unknown'),
         'review_notes': 'Human review pending. Automated extraction and assistant review are stored separately.',
     })
     if entry['case_kind'] == 'scope_only' and response:
-        match = re.search(r'Decision\s*\*{0,2}\s*:\s*\*{0,2}\s*(CAN_HELP|PARTIAL|DECLINE|NEEDS_INFO)', response, re.I)
-        template['stated_decision'] = match.group(1) if match else None
+        parsed = parse_decision(response)
+        template['stated_decision'] = parsed['value']
+        template['label_parse'] = parsed
     dump(directory / 'responses' / f'{run_id}.json', template)
     print(json.dumps({'sequence': entry['sequence'], 'run_id': run_id,
                       'status': template['run_status'], 'decision': template['stated_decision'],
@@ -116,14 +123,30 @@ def run_one(entry, directory, empty_cwd):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument('--execute', action='store_true', help='Explicit opt-in required to call models; never use for offline verification.')
+    parser.add_argument('--batch-id', help='Required collection batch identifier; reuse only for the same documented batch.')
     parser.add_argument('--run-dir', type=Path, default=None)
     parser.add_argument('--limit', type=int, default=None)
     parser.add_argument('--workers', type=int, choices=(1, 2), default=2)
     parser.add_argument('--allow-reruns', action='store_true',
                         help='Use only after the user explicitly requests rerunning old prompts.')
     args = parser.parse_args()
+    if not args.execute or not args.batch_id:
+        parser.error('Model calls require --execute and --batch-id after separate user authorization.')
     directory = args.run_dir or Path((ROOT / 'active-run.txt').read_text(encoding='utf-8'))
+    protect_baseline(directory)
+    manifest_check = read(directory / 'manifest.json')
+    if manifest_check.get('status') == 'preregistered_not_authorized':
+        raise SystemExit('Replication plan is not authorized for collection. Keep it unrun.')
+    frozen_issues = validate_frozen_inputs(directory)
+    if frozen_issues:
+        raise ValueError('; '.join(frozen_issues))
     schedule = json.loads((directory / 'schedule.json').read_text(encoding='utf-8'))
+    cases = read(directory / 'inputs' / 'prompts.json')['prompts']
+    schedule_issues = validate_records(schedule, [], cases)
+    schedule_issues = [issue for issue in schedule_issues if not issue.startswith('missing run:')]
+    if schedule_issues:
+        raise ValueError('; '.join(schedule_issues))
     todo = [entry for entry in schedule if not (directory / 'responses' / f"{entry['run_id']}.json").exists()]
     if args.limit is not None:
         todo = todo[:args.limit]
@@ -139,6 +162,7 @@ def main():
                      'cli_executable': str(CODEX), 'disabled_features': DISABLED,
                      'status': 'running', 'concurrency': args.workers,
                      'allow_reruns': args.allow_reruns,
+                     'collection_batch': args.batch_id, 'harness': harness_provenance(ROOT),
                      'context': {'user_config_loaded': False, 'project_doc_max_bytes': 0,
                                  'host_skill_discovery': False, 'memories': False,
                                  'ephemeral': True, 'prior_conversation_history': False,

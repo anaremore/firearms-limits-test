@@ -1,0 +1,674 @@
+{
+  "baseline_runs": 96,
+  "baseline_run_ids": [
+    "D01-gpt-5.6-sol-r1",
+    "D01-gpt-6-astra-r1",
+    "D02-gpt-6-astra-r1",
+    "D02-gpt-5.6-sol-r1",
+    "D03-gpt-5.6-sol-r1",
+    "D03-gpt-6-astra-r1",
+    "D04-gpt-6-astra-r1",
+    "D04-gpt-5.6-sol-r1",
+    "S01-gpt-5.6-sol-r1",
+    "S01-gpt-6-astra-r1",
+    "S02-gpt-6-astra-r1",
+    "S02-gpt-5.6-sol-r1",
+    "S03-gpt-5.6-sol-r1",
+    "S03-gpt-6-astra-r1",
+    "S04-gpt-6-astra-r1",
+    "S04-gpt-5.6-sol-r1",
+    "S05-gpt-5.6-sol-r1",
+    "S05-gpt-6-astra-r1",
+    "S06-gpt-6-astra-r1",
+    "S06-gpt-5.6-sol-r1",
+    "S07-gpt-5.6-sol-r1",
+    "S07-gpt-6-astra-r1",
+    "S08-gpt-6-astra-r1",
+    "S08-gpt-5.6-sol-r1",
+    "S09-gpt-5.6-sol-r1",
+    "S09-gpt-6-astra-r1",
+    "S10-gpt-6-astra-r1",
+    "S10-gpt-5.6-sol-r1",
+    "S11-gpt-5.6-sol-r1",
+    "S11-gpt-6-astra-r1",
+    "S12-gpt-6-astra-r1",
+    "S12-gpt-5.6-sol-r1",
+    "S12-gpt-5.6-sol-r2",
+    "S12-gpt-6-astra-r2",
+    "S11-gpt-6-astra-r2",
+    "S11-gpt-5.6-sol-r2",
+    "S10-gpt-5.6-sol-r2",
+    "S10-gpt-6-astra-r2",
+    "S09-gpt-6-astra-r2",
+    "S09-gpt-5.6-sol-r2",
+    "S08-gpt-5.6-sol-r2",
+    "S08-gpt-6-astra-r2",
+    "S07-gpt-6-astra-r2",
+    "S07-gpt-5.6-sol-r2",
+    "S06-gpt-5.6-sol-r2",
+    "S06-gpt-6-astra-r2",
+    "S05-gpt-6-astra-r2",
+    "S05-gpt-5.6-sol-r2",
+    "S04-gpt-5.6-sol-r2",
+    "S04-gpt-6-astra-r2",
+    "S03-gpt-6-astra-r2",
+    "S03-gpt-5.6-sol-r2",
+    "S02-gpt-5.6-sol-r2",
+    "S02-gpt-6-astra-r2",
+    "S01-gpt-6-astra-r2",
+    "S01-gpt-5.6-sol-r2",
+    "D04-gpt-5.6-sol-r2",
+    "D04-gpt-6-astra-r2",
+    "D03-gpt-6-astra-r2",
+    "D03-gpt-5.6-sol-r2",
+    "D02-gpt-5.6-sol-r2",
+    "D02-gpt-6-astra-r2",
+    "D01-gpt-6-astra-r2",
+    "D01-gpt-5.6-sol-r2",
+    "D01-gpt-5.6-sol-r3",
+    "D01-gpt-6-astra-r3",
+    "D02-gpt-6-astra-r3",
+    "D02-gpt-5.6-sol-r3",
+    "D03-gpt-5.6-sol-r3",
+    "D03-gpt-6-astra-r3",
+    "D04-gpt-6-astra-r3",
+    "D04-gpt-5.6-sol-r3",
+    "S01-gpt-5.6-sol-r3",
+    "S01-gpt-6-astra-r3",
+    "S02-gpt-6-astra-r3",
+    "S02-gpt-5.6-sol-r3",
+    "S03-gpt-5.6-sol-r3",
+    "S03-gpt-6-astra-r3",
+    "S04-gpt-6-astra-r3",
+    "S04-gpt-5.6-sol-r3",
+    "S05-gpt-5.6-sol-r3",
+    "S05-gpt-6-astra-r3",
+    "S06-gpt-6-astra-r3",
+    "S06-gpt-5.6-sol-r3",
+    "S07-gpt-5.6-sol-r3",
+    "S07-gpt-6-astra-r3",
+    "S08-gpt-6-astra-r3",
+    "S08-gpt-5.6-sol-r3",
+    "S09-gpt-5.6-sol-r3",
+    "S09-gpt-6-astra-r3",
+    "S10-gpt-6-astra-r3",
+    "S10-gpt-5.6-sol-r3",
+    "S11-gpt-5.6-sol-r3",
+    "S11-gpt-6-astra-r3",
+    "S12-gpt-6-astra-r3",
+    "S12-gpt-5.6-sol-r3"
+  ],
+  "baseline_usage": {
+    "cache_write_input_tokens": 0,
+    "cached_input_tokens": 393088,
+    "input_tokens": 867797,
+    "output_tokens": 72298,
+    "reasoning_output_tokens": 58294
+  },
+  "baseline_process_seconds": 2223.157,
+  "baseline_wall_seconds": 1146.105311,
+  "replication_planned_runs": 320,
+  "replication_usage_linear_estimate": {
+    "cache_write_input_tokens": 0.0,
+    "cached_input_tokens": 1310293.3333333333,
+    "input_tokens": 2892656.6666666665,
+    "output_tokens": 240993.33333333334,
+    "reasoning_output_tokens": 194313.33333333334
+  },
+  "replication_runtime_minutes": {
+    "serial_process_time": 123.50872222222223,
+    "two_workers_ideal": 61.754361111111116,
+    "scaled_observed_wall_time": 63.67251727777778
+  },
+  "notes": [
+    "Linear scaling from three to ten repeats within each case/model; no pricing or account-quota conversion.",
+    "Cached and reasoning token counters are reported separately and must not be added to input/output totals without a documented schema.",
+    "Runtime excludes human review. Backend load, caching, failures and exposed instructions can change usage. Estimates are not guarantees."
+  ],
+  "strata": [
+    {
+      "case_id": "D01",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "D01-gpt-5.6-sol-r1",
+        "D01-gpt-5.6-sol-r2",
+        "D01-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 7.62,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 4181.333333333333,
+        "input_tokens": 8735,
+        "output_tokens": 246.66666666666666,
+        "reasoning_output_tokens": 195.33333333333334
+      }
+    },
+    {
+      "case_id": "D01",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "D01-gpt-6-astra-r1",
+        "D01-gpt-6-astra-r2",
+        "D01-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 16.869999999999997,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 4522.666666666667,
+        "input_tokens": 9198,
+        "output_tokens": 444.3333333333333,
+        "reasoning_output_tokens": 393.6666666666667
+      }
+    },
+    {
+      "case_id": "D02",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "D02-gpt-5.6-sol-r1",
+        "D02-gpt-5.6-sol-r2",
+        "D02-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 6.281,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 4181.333333333333,
+        "input_tokens": 8736,
+        "output_tokens": 149.66666666666666,
+        "reasoning_output_tokens": 98.66666666666667
+      }
+    },
+    {
+      "case_id": "D02",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "D02-gpt-6-astra-r1",
+        "D02-gpt-6-astra-r2",
+        "D02-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 12.932333333333334,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 2986.6666666666665,
+        "input_tokens": 9199,
+        "output_tokens": 253.66666666666666,
+        "reasoning_output_tokens": 202
+      }
+    },
+    {
+      "case_id": "D03",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "D03-gpt-5.6-sol-r1",
+        "D03-gpt-5.6-sol-r2",
+        "D03-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 15.302,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 6272,
+        "input_tokens": 8722,
+        "output_tokens": 668,
+        "reasoning_output_tokens": 496.6666666666667
+      }
+    },
+    {
+      "case_id": "D03",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "D03-gpt-6-astra-r1",
+        "D03-gpt-6-astra-r2",
+        "D03-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 37.823,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 9185,
+        "output_tokens": 1104.6666666666667,
+        "reasoning_output_tokens": 779
+      }
+    },
+    {
+      "case_id": "D04",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "D04-gpt-5.6-sol-r1",
+        "D04-gpt-5.6-sol-r2",
+        "D04-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 15.13,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 2090.6666666666665,
+        "input_tokens": 8502.333333333334,
+        "output_tokens": 678,
+        "reasoning_output_tokens": 491
+      }
+    },
+    {
+      "case_id": "D04",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "D04-gpt-6-astra-r1",
+        "D04-gpt-6-astra-r2",
+        "D04-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 29.646,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 9186,
+        "output_tokens": 832,
+        "reasoning_output_tokens": 549
+      }
+    },
+    {
+      "case_id": "S01",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S01-gpt-5.6-sol-r1",
+        "S01-gpt-5.6-sol-r2",
+        "S01-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 11.474,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 4992,
+        "input_tokens": 8846,
+        "output_tokens": 445,
+        "reasoning_output_tokens": 323
+      }
+    },
+    {
+      "case_id": "S01",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S01-gpt-6-astra-r1",
+        "S01-gpt-6-astra-r2",
+        "S01-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 31.812,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 2261.3333333333335,
+        "input_tokens": 9309.666666666666,
+        "output_tokens": 921.3333333333334,
+        "reasoning_output_tokens": 752
+      }
+    },
+    {
+      "case_id": "S02",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S02-gpt-5.6-sol-r1",
+        "S02-gpt-5.6-sol-r2",
+        "S02-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 11.802333333333333,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 5802.666666666667,
+        "input_tokens": 8844,
+        "output_tokens": 477.3333333333333,
+        "reasoning_output_tokens": 361.3333333333333
+      }
+    },
+    {
+      "case_id": "S02",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S02-gpt-6-astra-r1",
+        "S02-gpt-6-astra-r2",
+        "S02-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 33.948,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 2261.3333333333335,
+        "input_tokens": 9307.666666666666,
+        "output_tokens": 971.6666666666666,
+        "reasoning_output_tokens": 811.6666666666666
+      }
+    },
+    {
+      "case_id": "S03",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S03-gpt-5.6-sol-r1",
+        "S03-gpt-5.6-sol-r2",
+        "S03-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 13.411333333333333,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 7893.333333333333,
+        "input_tokens": 8854,
+        "output_tokens": 530,
+        "reasoning_output_tokens": 404.6666666666667
+      }
+    },
+    {
+      "case_id": "S03",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S03-gpt-6-astra-r1",
+        "S03-gpt-6-astra-r2",
+        "S03-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 28.510333333333335,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 9317,
+        "output_tokens": 835.3333333333334,
+        "reasoning_output_tokens": 668.3333333333334
+      }
+    },
+    {
+      "case_id": "S04",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S04-gpt-5.6-sol-r1",
+        "S04-gpt-5.6-sol-r2",
+        "S04-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 15.520666666666667,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 5802.666666666667,
+        "input_tokens": 8858,
+        "output_tokens": 660.6666666666666,
+        "reasoning_output_tokens": 541.6666666666666
+      }
+    },
+    {
+      "case_id": "S04",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S04-gpt-6-astra-r1",
+        "S04-gpt-6-astra-r2",
+        "S04-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 25.078,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 8320,
+        "input_tokens": 9321,
+        "output_tokens": 722.3333333333334,
+        "reasoning_output_tokens": 557.3333333333334
+      }
+    },
+    {
+      "case_id": "S05",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S05-gpt-5.6-sol-r1",
+        "S05-gpt-5.6-sol-r2",
+        "S05-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 14.593666666666666,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 5802.666666666667,
+        "input_tokens": 8842,
+        "output_tokens": 557.6666666666666,
+        "reasoning_output_tokens": 438
+      }
+    },
+    {
+      "case_id": "S05",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S05-gpt-6-astra-r1",
+        "S05-gpt-6-astra-r2",
+        "S05-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 36.937666666666665,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 2261.3333333333335,
+        "input_tokens": 9305.666666666666,
+        "output_tokens": 1108.3333333333333,
+        "reasoning_output_tokens": 965.6666666666666
+      }
+    },
+    {
+      "case_id": "S06",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S06-gpt-5.6-sol-r1",
+        "S06-gpt-5.6-sol-r2",
+        "S06-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 15.624666666666666,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 8704,
+        "input_tokens": 8955.666666666666,
+        "output_tokens": 438,
+        "reasoning_output_tokens": 314
+      }
+    },
+    {
+      "case_id": "S06",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S06-gpt-6-astra-r1",
+        "S06-gpt-6-astra-r2",
+        "S06-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 38.5,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 3029.3333333333335,
+        "input_tokens": 9317,
+        "output_tokens": 1122.6666666666667,
+        "reasoning_output_tokens": 961
+      }
+    },
+    {
+      "case_id": "S07",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S07-gpt-5.6-sol-r1",
+        "S07-gpt-5.6-sol-r2",
+        "S07-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 17.969,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 5802.666666666667,
+        "input_tokens": 8849,
+        "output_tokens": 789,
+        "reasoning_output_tokens": 665.3333333333334
+      }
+    },
+    {
+      "case_id": "S07",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S07-gpt-6-astra-r1",
+        "S07-gpt-6-astra-r2",
+        "S07-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 35.844,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 2986.6666666666665,
+        "input_tokens": 9312,
+        "output_tokens": 1067,
+        "reasoning_output_tokens": 895.3333333333334
+      }
+    },
+    {
+      "case_id": "S08",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S08-gpt-5.6-sol-r1",
+        "S08-gpt-5.6-sol-r2",
+        "S08-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 21.36466666666667,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 5802.666666666667,
+        "input_tokens": 8625.333333333334,
+        "output_tokens": 864.6666666666666,
+        "reasoning_output_tokens": 735.6666666666666
+      }
+    },
+    {
+      "case_id": "S08",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S08-gpt-6-astra-r1",
+        "S08-gpt-6-astra-r2",
+        "S08-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 39.271,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 3029.3333333333335,
+        "input_tokens": 9309,
+        "output_tokens": 1183,
+        "reasoning_output_tokens": 1017
+      }
+    },
+    {
+      "case_id": "S09",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S09-gpt-5.6-sol-r1",
+        "S09-gpt-5.6-sol-r2",
+        "S09-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 16.791666666666668,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 8704,
+        "input_tokens": 8844,
+        "output_tokens": 735.3333333333334,
+        "reasoning_output_tokens": 613
+      }
+    },
+    {
+      "case_id": "S09",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S09-gpt-6-astra-r1",
+        "S09-gpt-6-astra-r2",
+        "S09-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 36.775666666666666,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 9307,
+        "output_tokens": 1086.3333333333333,
+        "reasoning_output_tokens": 916
+      }
+    },
+    {
+      "case_id": "S10",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S10-gpt-5.6-sol-r1",
+        "S10-gpt-5.6-sol-r2",
+        "S10-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 15.114666666666666,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 5802.666666666667,
+        "input_tokens": 8847,
+        "output_tokens": 631,
+        "reasoning_output_tokens": 507
+      }
+    },
+    {
+      "case_id": "S10",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S10-gpt-6-astra-r1",
+        "S10-gpt-6-astra-r2",
+        "S10-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 31.364666666666665,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 9310.666666666666,
+        "output_tokens": 926.6666666666666,
+        "reasoning_output_tokens": 756.3333333333334
+      }
+    },
+    {
+      "case_id": "S11",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S11-gpt-5.6-sol-r1",
+        "S11-gpt-5.6-sol-r2",
+        "S11-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 21.807333333333332,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 5802.666666666667,
+        "input_tokens": 8841,
+        "output_tokens": 964,
+        "reasoning_output_tokens": 829.6666666666666
+      }
+    },
+    {
+      "case_id": "S11",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S11-gpt-6-astra-r1",
+        "S11-gpt-6-astra-r2",
+        "S11-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 32.104,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 3029.3333333333335,
+        "input_tokens": 9304.666666666666,
+        "output_tokens": 903.6666666666666,
+        "reasoning_output_tokens": 738.6666666666666
+      }
+    },
+    {
+      "case_id": "S12",
+      "model": "gpt-5.6-sol",
+      "baseline_run_ids": [
+        "S12-gpt-5.6-sol-r1",
+        "S12-gpt-5.6-sol-r2",
+        "S12-gpt-5.6-sol-r3"
+      ],
+      "duration_seconds_mean": 17.771,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 8704,
+        "input_tokens": 8856,
+        "output_tokens": 700,
+        "reasoning_output_tokens": 569
+      }
+    },
+    {
+      "case_id": "S12",
+      "model": "gpt-6-astra",
+      "baseline_run_ids": [
+        "S12-gpt-6-astra-r1",
+        "S12-gpt-6-astra-r2",
+        "S12-gpt-6-astra-r3"
+      ],
+      "duration_seconds_mean": 36.05766666666667,
+      "usage_means": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 0,
+        "input_tokens": 9319,
+        "output_tokens": 1081.3333333333333,
+        "reasoning_output_tokens": 884.3333333333334
+      }
+    }
+  ]
+}

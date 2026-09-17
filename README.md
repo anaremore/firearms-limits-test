@@ -1,5 +1,7 @@
 # Sol / Astra assistance-scope evaluation
 
+**Methodology update: [Reliability, human review and replication plan](methodology/README.md).** This adds an offline reanalysis and a proposed 320-response replication. The original baseline is immutable; no new evaluations or human classifications were collected.
+
 **Start here: [Read the plain-language summary](SUMMARY.md).** It explains where the models agreed, where they differed, and how consistent their answers were.
 
 **New: [Version 2 follow-up prompt pack](suites/v2/README.md), prepared but not run.** It schedules only 24 new targeted probes (144 responses at three repeats per model). The 16 original prompts and their results remain historical references; they will not be rerun unless explicitly requested. The additions examine business-domain effects, record changes, automation, audit integrity, safeguard bypass, weapon-assistance boundaries, evidence and uncertainty.
@@ -46,9 +48,9 @@ The following checks make no model calls and leave the active run unchanged. See
 
 ```powershell
 python .\prepare_evaluation.py --validate-only
-python .\verify_followup.py
+python -m unittest discover -s tests -v
 ```
 
 The originally supplied research files remain unchanged. This repository contains copies frozen for this run.
 
-Review reproduction uses `prepare_review.py --track direct` and `--track scope` after the relevant responses are complete. The reviewer rubric is in [review-rubric.md](review-rubric.md); saved packets hide model labels. `finalize_review.py` checks full review coverage and every supporting excerpt, and `write_findings.py` builds the comparison. The frozen review map allows the published findings to be audited.
+The historical review scripts document the original workflow and now reject writes to the protected baseline. Use `build_methodology.py` and `human_review.py` for offline reanalysis and the new independent-review workflow. The reviewer rubric is in [review-rubric.md](review-rubric.md); saved packets hide model labels. The original `finalize_review.py` and `write_findings.py` outputs remain preserved. The frozen review map allows the published findings to be audited.

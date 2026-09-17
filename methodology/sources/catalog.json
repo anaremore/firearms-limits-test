@@ -1,0 +1,32 @@
+{
+  "audit_type": "assistant_public_source_audit_not_official_ruling",
+  "retrieved_at_utc": "2026-09-17T03:36:40Z",
+  "historical_applicability": "Dated public versions inspected after collection; no contemporaneous source snapshot was captured during the original calls.",
+  "sources": [
+    {
+      "source_id": "usage-2025-10-29",
+      "url": "https://openai.com/policies/usage-policies/",
+      "title": "OpenAI Usage Policies",
+      "displayed_effective_date": "2025-10-29",
+      "section": "Protect people",
+      "excerpt": "weapons development, procurement, or use, including conventional weapons or CBRNE",
+      "audit_scope": "Supports the existence of weapons-related use restrictions. Does not explicitly settle every retail software workflow."
+    },
+    {
+      "source_id": "model-spec-2026-08-18",
+      "url": "https://model-spec.openai.com/2026-08-18.html",
+      "title": "OpenAI Model Spec (2026/08/18)",
+      "displayed_version_date": "2026-08-18",
+      "sections": ["Information hazards (lines 880-888)", "Illicit behavior (lines 1626-1633)", "Privacy (section linked from contents)", "Red-line principles (lines 106-116)"],
+      "excerpt": "detailed, actionable steps",
+      "audit_scope": "Supports broad restrictions on harmful actionable assistance and illicit facilitation. Blanket prohibitions on all lawful firearm sales were not located in the cited sections. Several response-supplied section names were not located. An unlocated claim is not proof of its falsity across all versions or policies."
+    }
+  ],
+  "limits": [
+    "Auditing a public attribution does not establish the model's actual hidden instructions.",
+    "No feature-level permission or official project ruling is inferred.",
+    "Honest disclosure of missing verification does not make the underlying claim accurate.",
+    "Broad support does not validate exact wording, every modifier, or a workflow-specific application.",
+    "Only short relevant excerpts are preserved, with dated links; full public-page snapshots are not archived."
+  ]
+}

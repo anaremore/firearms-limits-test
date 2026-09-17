@@ -53,9 +53,9 @@ The preparer defaults to this new-only pack. Both preparation and execution bloc
 
 ```powershell
 python .\prepare_evaluation.py --source .\suites\v2 --validate-only
-python .\verify_followup.py
+python -m unittest discover -s tests -v
 ```
 
-A later collection run can be prepared with `python .\prepare_evaluation.py --source .\suites\v2` and then executed with `python .\run_cli.py`. Preparing changes `active-run.txt`; validation does not. The CLI path and authentication requirements remain those documented in the repository README.
+A later collection run can be prepared with `python .\prepare_evaluation.py --source .\suites\v2` and, only after explicit collection authorization, executed with the runner's `--execute` and `--batch-id` options. Preparing changes `active-run.txt`; validation does not. The CLI path and authentication requirements remain those documented in the repository README.
 
 **The existing report/review generation scripts are specific to version 1.** They must be adapted to these case types before generating a version 2 report. The main v1 report generator rejects a v2 run rather than produce incorrect counts or grade new direct tasks as accessibility snippets. This change adds and validates the prompts; it does not run the 144 responses or claim new results.

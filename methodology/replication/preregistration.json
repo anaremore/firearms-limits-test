@@ -1,0 +1,57 @@
+{
+  "plan_version": "1",
+  "status": "preregistered_not_authorized",
+  "new_evaluations_launched": 0,
+  "baseline_run": "20260917T024135Z",
+  "source_suite_version": "1.0",
+  "source_suite_file_sha256": "fe97b5d3d3adc1dd64f375ed797cd9f6d1d5ee93e0122cf1283f7d89beb5a11d",
+  "original_prompt_hashes": {
+    "D01": "5ebbacb24ecadea8a95d0f2ba9284400bedf6664ac8da27b68554f0d3314d8f0",
+    "D02": "35e3d73dd6f763316cba6f3281afbb04c729ac03006c70a971ab82aa354f6870",
+    "D03": "59e17dc5a7ec697a60e5a320093f022177bddb033499e2ffcbf0334ee7e5af7f",
+    "D04": "7ea2e3316f944772aadcfbc4a7be8a86d684959635d7da24b8a5caab03ee62a4",
+    "S01": "9743899116c41a3464fa0df0a96b188c83d4e03b9a6beaa6ada481ae9497fdcd",
+    "S02": "e3830b13ac2b32a50deab547b74b9759086e02726ccbe6946479a498cda32231",
+    "S03": "24411bc30d25b7d74edc3f5775fc627f9c0fb00060d83fd6351bdac3611a21c0",
+    "S04": "e0b9bd8af316a0951f45ce97b3b245272117b0079cba5feb50c13ce85c2cfb5a",
+    "S05": "58e19bb4b50101acd593dc6f85684e401bd947851f9d3213200f59d82fa1b776",
+    "S06": "65a16eff6c6214c89a4f63519a79424f5b4690332530c4b9b59b82364d0679f4",
+    "S07": "444301a1038804a4ba732aa61685c6bd6c4cbc07cb778dd5721b59f7d9fa414b",
+    "S08": "bda405a3b9e08230e961175c575b1c132cd8f14296057b3fe1f620a9b98a24d7",
+    "S09": "30fc78b6d58bce1cc6f42a41babda5ad3e15890fd1b60381d05156cdbe2beb71",
+    "S10": "d4710cb6fc0e802b9afab5ee7ef82f4946986bf40125101c6055c87cb3ea9592",
+    "S11": "ae9489b970c4ec1098e4681de08b198548de898a7e39cba96ee3392df8bc3318",
+    "S12": "4b493aebd00fb43ca70736d5910cb6f6da095ab3daf7e0c9b991c3b88bf94ebf"
+  },
+  "schedule_sha256": "d699ce0f7afac1de42663091ba77b51b32be0bcd9f5de2b4c3b5abd545cf4e8a",
+  "ordering_seed": "firearms-limits-replication-2026-09-17-v1",
+  "ordering_algorithm": "SHA-256 sorted permutations; five reverse-order blocks; model first-order flips per case in each block",
+  "cases": 16,
+  "models": [
+    "gpt-5.6-sol",
+    "gpt-6-astra"
+  ],
+  "repeats_per_case_model": 10,
+  "planned_runs": 320,
+  "requested_reasoning": "xhigh",
+  "fresh_ephemeral_session_each_response": true,
+  "collection_authorized": false,
+  "execution_harness_revision": "capture_at_authorized_collection; plan is not a run",
+  "analysis_plan": "PLAN.md",
+  "analysis_plan_sha256": "dc2cd0016e1d17eb86310e166be2775db5a380eb93a7eacd9167ae15afda2b88",
+  "human_rubric_sha256": "90ada131a0694325ec2fd7a4b82886d7a96365dab2469ccf6060177bec5c8adc",
+  "measurement_definitions_sha256": "41c4ce2c6f3cd9875d2f17866322a2209135f95dd0b0de62130e7b53e43c6722",
+  "harness_file_hashes_at_plan": {
+    "run_cli.py": "70ab85d976d2b0424417bfbb6d3cab4570404f7df7aca0fe41a589b1f99e1bf4",
+    "prepare_evaluation.py": "581ee4303e720b96d1bc27a94040bbe3ab31077752b42bf392edfc4ca3e92b92",
+    "reliability.py": "261fa76b2d5da168f082b361fab60e8cd1d8afc527d67dd27735a64561509a62",
+    "evaluation_history.py": "2c697b673c3c69314f689536f9df3c99b237aa076515117ee60e0cb89fc3eac2"
+  },
+  "followup_suite_v2": "excluded; separate exploratory study",
+  "inclusion_rules": [
+    "Include every planned attempt and all refusals; retain warnings and malformed outputs.",
+    "Do not replace failures or retry refusals. Report missing and failed attempts separately.",
+    "Source, tool-use, format and parser deviations remain visible, not silently excluded.",
+    "Any amended plan is versioned before collection resumes; no adaptive acceptance search."
+  ]
+}

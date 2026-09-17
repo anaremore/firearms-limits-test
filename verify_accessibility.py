@@ -2,10 +2,12 @@
 from html.parser import HTMLParser
 import json
 from pathlib import Path
+from reliability import protect_baseline
 import re
 
 ROOT=Path(__file__).resolve().parent
 folder=Path((ROOT/'active-run.txt').read_text(encoding='utf-8'))
+protect_baseline(folder)
 class Elements(HTMLParser):
     def __init__(self):
         super().__init__()

@@ -11,6 +11,7 @@ import re
 import sys
 import tempfile
 from unittest.mock import patch
+from reliability import protect_baseline
 
 from evaluation_history import completed_prompt_hashes, reject_unapproved_reruns
 
@@ -144,7 +145,7 @@ def main():
                 if source==BASELINE:
                     # Execution checks independently, even when a schedule was prepared with opt-in.
                     runner.ROOT=temporary_root
-                    sys.argv=['run_cli.py','--run-dir',str(prepared)]
+                    sys.argv=['run_cli.py','--execute','--batch-id','offline-test','--run-dir',str(prepared)]
                     with patch.object(runner.subprocess,'check_output',side_effect=AssertionError('CLI must not be called')):
                         try:
                             runner.main()
@@ -166,16 +167,13 @@ def main():
                         assert 'Old prompts are blocked' in str(error)
                     else:
                         raise AssertionError('New completed text must block a later run')
-        # Reopening a fully completed run must return without CLI calls or modifying its manifest.
-        runner.ROOT=ROOT
-        manifest_path=BASELINE.parent/'manifest.json'
-        manifest_before=manifest_path.read_bytes()
-        sys.argv=['run_cli.py','--run-dir',str(BASELINE.parent)]
-        with patch.object(runner.subprocess,'check_output',side_effect=AssertionError('CLI must not be called')):
-            with redirect_stdout(StringIO()) as output:
-                runner.main()
-        assert json.loads(output.getvalue())['models_called']==0
-        assert manifest_path.read_bytes()==manifest_before
+        # Published runs are now immutable, including attempts to re-open them for collection.
+        try:
+            protect_baseline(BASELINE.parent)
+        except ValueError as error:
+            assert 'immutable' in str(error)
+        else:
+            raise AssertionError('Baseline write guard failed')
     finally:
         sys.argv=saved_argv
     assert (active.read_bytes() if active.exists() else None)==active_before

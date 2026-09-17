@@ -8,6 +8,7 @@ import re
 import shutil
 
 from evaluation_history import reject_unapproved_reruns
+from reliability import harness_provenance, git_provenance
 
 ROOT = Path(__file__).resolve().parent
 SOURCE = ROOT / 'suites/v2'
@@ -79,6 +80,8 @@ def main():
     assert len(schedule) == len(prompts) * len(models) * 3
     manifest = {
         'suite_version': suite['suite_version'],
+        'suite_revision': git_provenance(ROOT),
+        'harness': harness_provenance(),
         'frozen_at_utc': now.isoformat(),
         'source_directory': str(source),
         'input_files_sha256': {
@@ -87,6 +90,7 @@ def main():
         },
         'prompt_representations_match': True,
         'planned_runs': len(schedule),
+        'schedule_sha256': sha256((json.dumps(schedule, indent=2, ensure_ascii=False) + '\n').encode('utf-8')).hexdigest(),
         'status': 'prepared_not_run',
         'allow_reruns': args.allow_reruns,
         'product_surface': None,
@@ -99,7 +103,7 @@ def main():
         ],
     }
     for filename, data in [('manifest.json', manifest), ('schedule.json', schedule)]:
-        (output / filename).write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8')
+        (output / filename).write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n', encoding='utf-8', newline='\n')
     (ROOT / 'active-run.txt').write_text(str(output), encoding='utf-8')
     print(json.dumps({'output_directory': str(output), 'input_pairs_verified': len(prompts), 'scheduled_runs': len(schedule)}))
 
